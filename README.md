@@ -1,7 +1,8 @@
 # Deneb-Showcase-Chart
 
  Deneb is a powerful visual tool for creating custom visualizations in Power BI using the Vega and Vega-Lite visualization grammars. With Deneb, you can build advanced, interactive, and highly customizable charts that go beyond the standard visualizations available in Power BI.
-
+ 
+- **Beeswarm Competency by Job Family and IDP Group**
 ![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/Beeswarm%20Chart/Beeswarm%20Competency%20Chart.PNG?raw=true))
 
  
