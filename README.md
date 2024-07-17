@@ -15,12 +15,6 @@ Integration with Power BI
 ![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/Bubble%20plot/Quart%20sactter%20blind%20Spot%20Analysis.PNG?raw=true)
 
 
-# Advanced horizontal barplot with facet
-
-![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/ADVANCED%20Bar%20Chart/Facet%20Bar%20chart%20Compare%20Actual%20vs%20Target.PNG?raw=true)
-![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/ADVANCED%20Bar%20Chart/2.PNG?raw=true)
-
-
 # Heatmap Retirement & Heatmap Expreience
   
 ![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/Advanecd%20Heatmap/Facet%20heatmap.PNG)
@@ -33,3 +27,10 @@ Integration with Power BI
 # Boxplot chart
 
 ![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/Boxplot%20Chart/Boxplot%20Chart.PNG)
+
+
+# Advanced horizontal barplot with facet
+
+![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/ADVANCED%20Bar%20Chart/Facet%20Bar%20chart%20Compare%20Actual%20vs%20Target.PNG?raw=true)
+![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/ADVANCED%20Bar%20Chart/2.PNG?raw=true)
+
