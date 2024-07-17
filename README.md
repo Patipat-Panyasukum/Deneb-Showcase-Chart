@@ -7,6 +7,8 @@
 ![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/Beeswarm%20Chart/Beeswarm%20Competency%20Chart.PNG?raw=true)
 
 
+- **Quartdance sactter PCT blind Spot Analysis**
+![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/Bubble%20plot/Quart%20sactter%20blind%20Spot%20Analysis.PNG?raw=true)
 
  
 # Key Features of Deneb
