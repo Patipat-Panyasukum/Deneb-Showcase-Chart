@@ -26,7 +26,7 @@
 
  - **Pyramid Chart***
   
-![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/Advanecd%20Heatmap/Facet%20heatmap.PNG)
+![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/Pyramid%20chart/pyramid%20chart.PNG?raw=true)
 
 
 # Key Features of Deneb
