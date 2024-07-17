@@ -28,3 +28,8 @@ Integration with Power BI
 # Advance Donut chart
 
 ![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/Donut%20Chart/Deneb_Donut.PNG)
+
+
+# Boxplot chart
+
+![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/Boxplot%20Chart/Boxplot%20Chart.PNG)
