@@ -15,14 +15,11 @@
 ![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/ADVANCED%20Bar%20Chart/Facet%20Bar%20chart%20Compare%20Actual%20vs%20Target.PNG?raw=true)
 ![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/ADVANCED%20Bar%20Chart/2.PNG?raw=true)
 
-- **Heatmap_Retirement**
+- **Heatmap_Retirement & Heatmap_Expreience***
   
-![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/Advanecd%20Heatmap/Heatmap%20Retirement%20Next%205%20Years.PNG?raw=true)
+![image all]()
 
 
-- **Heatmap_Expreience**
-  
-![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/Advanecd%20Heatmap/Heatmap%20Expreience.PNG?raw=true)
  
 # Key Features of Deneb
 
