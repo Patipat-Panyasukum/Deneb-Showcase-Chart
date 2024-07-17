@@ -5,6 +5,7 @@
  
 - **Beeswarm Competency by Job Family and IDP Group**
 ![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/Beeswarm%20Chart/Beeswarm%20Competency%20Chart.PNG?raw=true)
+<iframe width="800" height="600" src="[https://app.powerbi.com/view?r=YOUR_REPORT_URL_HERE](https://app.powerbi.com/groups/me/reports/2f0c1854-358e-4697-93d8-499fc9f95871/99b8f2855db26a750dea?ctid=229cbd1d-a8e8-4dd1-8006-20f3b1ca3f0a&pbi_source=shareVisual&visual=74e299bfdc8038425313&height=502.99&width=1000.00&bookmarkGuid=89cfd407-f967-4666-9e45-3a12b984e132&portalSessionId=85cd836c-f253-4893-bad7-e9cbf31eb4f0&fromEntryPoint=sharevisual)" frameborder="0" allowFullScreen="true"></iframe>
 
 
 - **Quartdance sactter PCT blind Spot Analysis**
