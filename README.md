@@ -21,8 +21,10 @@ Integration with Power BI
 ![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/ADVANCED%20Bar%20Chart/2.PNG?raw=true)
 
 
-# Heatmap_Retirement & Heatmap_Expreience
+# Heatmap Retirement & Heatmap Expreience
   
 ![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/Advanecd%20Heatmap/Facet%20heatmap.PNG)
 
+# Advance Donut chart
 
+![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/Donut%20Chart/Deneb_Donut.PNG)
