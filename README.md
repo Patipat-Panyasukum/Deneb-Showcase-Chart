@@ -15,9 +15,9 @@ Integration with Power BI
 ![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/Bubble%20plot/Quart%20sactter%20blind%20Spot%20Analysis.PNG?raw=true)
 
 
-# Heatmap Retirement & Heatmap Expreience
+# Heatmap Expreience
   
-![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/Advanecd%20Heatmap/Facet%20heatmap.PNG)
+![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/Advanecd%20Heatmap/Heatmap%20Expreience.PNG?raw=true)
 
 # Advance Donut chart
 
