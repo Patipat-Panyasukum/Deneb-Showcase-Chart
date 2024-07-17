@@ -10,6 +10,11 @@
 - **Quartdance sactter PCT blind Spot Analysis**
 ![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/Bubble%20plot/Quart%20sactter%20blind%20Spot%20Analysis.PNG?raw=true)
 
+
+- **Advanced horizontal barplot with facet**
+![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/Bubble%20plot/Quart%20sactter%20blind%20Spot%20Analysis.PNG?raw=true)
+![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/ADVANCED%20Bar%20Chart/2.PNG?raw=true)
+
  
 # Key Features of Deneb
 
