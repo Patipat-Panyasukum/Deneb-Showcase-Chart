@@ -20,6 +20,8 @@ Integration with Power BI
 ![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/Advanecd%20Heatmap/Heatmap%20Expreience.PNG?raw=true)
 
 # Advance Donut chart
+- Reference : 🔥David's Deneb Showcase
+  🔗https://github.com/PBI-David/Deneb-Sh...
 
 ![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/Donut%20Chart/Deneb_Donut.PNG)
 
