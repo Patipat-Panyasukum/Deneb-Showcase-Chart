@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.30.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.19.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.26.0"></script>
+</head>
+<body>
+  <div id="vis"/>
+  <script>
+    const spec = {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Boxplot Age analysis",
+    "subtitle": "The whiskey plot show age percentile Min and Max Average age by Division",
+    "anchor": "start",
+    "font": "supermarket",
+    "fontSize": 22,
+    "subtitleFont": "supermarket",
+    "subtitleFontSize": 18,
+    "subtitlePadding": 3
+  },
+  "config": {
+    "axis": {
+      "labelFont": "supermarket",
+      "titleFont": "supermarket",
+      "labelFontSize": 17,
+      "titleFontSize": 23
+    },
+    "legend": {
+      "labelFont": "supermarket",
+      "titleFont": "supermarket",
+      "labelFontSize": 16,
+      "titleFontSize": 16
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/Patipat-Panyasukum/Deneb-Showcase-Chart/main/Boxplot%20Chart/Box%20plot%20Age_ghost_2.csv",
+    "format": {"type": "csv"}
+  },
+  "width": 1300,
+  "height": 800,
+  "layer": [
+    {
+      "mark": {
+        "type": "boxplot",
+        "extent": "min-max",
+        "outliers": true,
+        "box": {"size": 35, "stroke": "black", "strokeWidth": 2}
+      },
+      "encoding": {
+        "x": {
+          "field": "division",
+          "type": "nominal",
+          "axis": {"labelAngle": 45}
+        },
+        "y": {
+          "field": "Age",
+          "type": "quantitative",
+          "scale": {"domain": [20, 65]}
+        },
+        "color": {
+          "field": "division",
+          "type": "nominal",
+          "scale": {"scheme": "rainbow", "interpolate": "hcl"}
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "top",
+        "dx": 5,
+        "dy": 10
+      },
+      "transform": [
+        {
+          "aggregate": [{"op": "mean", "field": "Age", "as": "mean_Age"}],
+          "groupby": ["division"]
+        }
+      ],
+      "encoding": {
+        "x": {"field": "division", "type": "nominal"},
+        "y": {"field": "mean_Age", "type": "quantitative"},
+        "text": {"field": "mean_Age", "type": "quantitative", "format": ".1f"},
+        "fontWeight": {"value": "bold"}
+      }
+    },
+    {
+      "mark": {"type": "point", "filled": true, "color": "black", "size": 100},
+      "transform": [
+        {
+          "aggregate": [{"op": "mean", "field": "Age", "as": "mean_Age"}],
+          "groupby": ["division"]
+        }
+      ],
+      "encoding": {
+        "x": {"field": "division", "type": "nominal"},
+        "y": {"field": "mean_Age", "type": "quantitative"}
+      }
+    }
+  ],
+  "legend": {"orient": "bottom", "labelAngle": 45}
+};
+    vegaEmbed("#vis", spec, {mode: "vega-lite"}).then(console.log).catch(console.warn);
+  </script>
+</body>
+</html>
