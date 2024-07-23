@@ -16,7 +16,7 @@
   },
   "layer": [
     {
-      "mark": {"type": "rect", "tooltip": true},
+      "mark": {"type": "rect", "tooltip": true, "stroke": "white", "strokeWidth": 2},
       "encoding": {
         "x": {
           "field": "BuddhistYear",
@@ -50,10 +50,8 @@
             "labelFontSize": 20
           },
           "scale": {
-            "scheme": "linear",  
-            "type": "threshold",
-            "domain": [0, 2, 4, 6, 8, 10],
-            "range": ["#7f00ff", "#1995f2", "#4cf2ce", "#b2f295", "#ff954e", "#ff0000"] 
+            "type": "sequential",
+            "scheme": "blues"
           }
         },
         "tooltip": [
@@ -106,6 +104,6 @@
     "axis": {"titleFont": "Supermarket", "titleFontSize": 25},
     "legend": {"titleFont": "Supermarket", "titleFontSize": 22},
     "view": {"stroke": "gray"},
-    "background": "#f5f5f5"
+    "background": "#ffffff"
   }
 }
