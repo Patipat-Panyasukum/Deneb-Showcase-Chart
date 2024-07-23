@@ -10,9 +10,10 @@
   "data": {
     "name": "dataset"
   },
+  "padding": {"left": 10, "right": 10, "top": 10, "bottom": 50},
   "layer": [
     {
-      "mark": {"type": "rect", "tooltip": true},
+      "mark": {"type": "rect", "tooltip": true, "stroke": "white", "strokeWidth": 2},
       "encoding": {
         "x": {
           "field": "tenure_categories",
@@ -33,9 +34,9 @@
           "title": "ฝ่าย",
           "axis": {
             "labelFont": "Supermarket",
-            "labelFontSize": 25,
+            "labelFontSize": 20,
             "titleFont": "Supermarket",
-            "titleFontSize": 25
+            "titleFontSize": 20
           }
         },
         "color": {
@@ -43,10 +44,8 @@
           "type": "quantitative",
           "title": "จำนวนคน",
           "scale": {
-            "scheme": "linear",  
-            "type": "threshold",
-            "domain": [0, 5, 10, 15, 20, 30,35],
-            "range": ["#7f00ff", "#1995f2", "#4cf2ce", "#b2f295", "#ff954e", "#ff0000"] 
+            "type": "sequential",
+            "scheme": "blues"
           }
         }
       }
@@ -56,7 +55,8 @@
         "type": "text",
         "baseline": "middle",
         "align": "center",
-        "dx": -2,
+        "dx": 0,
+        "dy": 0,
         "fontSize": 20,
         "font": "Supermarket",
         "fontWeight": "bold"
@@ -82,11 +82,10 @@
         "fontWeight": "bold",
         "fontSize": 20,
         "color": "black",
-        "dy": 40
+        "dy": 570
       },
       "encoding": {
         "x": {"field": "tenure_categories", "type": "nominal"},
-        "y": {"field": "division", "type": "nominal", "aggregate": "sum"},
         "text": {"field": "TotalCount", "type": "quantitative"}
       }
     }
@@ -106,7 +105,7 @@
     },
     "legend": {
       "labelFont": "Supermarket",
-      "labelFontSize":20,
+      "labelFontSize": 20,
       "titleFont": "Supermarket",
       "titleFontSize": 16
     },
