@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.30.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.19.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.26.0"></script>
+</head>
+<body>
+  <div id="vis"/>
+  <script>
+    const spec = {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Individual Competency Target vs Actual (by Assessor Assessment)",
+    "fontSize": 24,
+    "fontWeight": "bold",
+    "anchor": "start",
+    "offset": 10
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/Patipat-Panyasukum/Deneb-Showcase-Chart/main/ADVANCED%20Bar%20Chart/data.csv"
+  },
+  "facet": {
+    "field": "name_surname",
+    "type": "nominal",
+    "columns": 3,
+    "header": {
+      "titleFontSize": 27,
+      "titleFontWeight": "bold",
+      "labelFontSize": 14,
+      "labelFontWeight": "bold",
+      "background": "#cccccc"
+    }
+  },
+  "spec": {
+    "width": {"step": 60},
+    "layer": [
+      {
+        "mark": {
+          "type": "bar",
+          "tooltip": true,
+          "stroke": "#000000",
+          "strokeWidth": 1
+        },
+        "encoding": {
+          "x": {
+            "field": "target",
+            "type": "quantitative",
+            "title": "Target",
+            "scale": {"domain": [0, 4]},
+            "axis": {
+              "grid": true,
+              "gridColor": "#d9d9d9",
+              "gridOpacity": 0.6,
+              "tickCount": 4,
+              "labelExpr": "datum.value % 1 === 0 ? datum.value : null",
+              "labelFontSize": 12,
+              "titleFontSize": 14,
+              "titleFontWeight": "bold"
+            }
+          },
+          "y": {
+            "field": "FC",
+            "type": "nominal",
+            "title": "Functional Competency",
+            "axis": {
+              "labelAngle": 0,
+              "labelFontSize": 12,
+              "titleFontSize": 14,
+              "titleFontWeight": "bold"
+            }
+          },
+          "color": {"value": "#F2C80F"},
+          "tooltip": [
+            {"field": "target", "type": "quantitative", "title": "Target"},
+            {
+              "field": "Actual Corrected",
+              "type": "quantitative",
+              "title": "Actual Corrected"
+            }
+          ]
+        }
+      },
+      {
+        "mark": {
+          "type": "bar",
+          "tooltip": true,
+          "stroke": "#000000",
+          "strokeWidth": 1
+        },
+        "encoding": {
+          "x": {"field": "Actual Corrected", "type": "quantitative"},
+          "y": {"field": "FC", "type": "nominal", "title": ""},
+          "color": {
+            "condition": [
+              {
+                "test": "datum['Actual Corrected'] === datum.target",
+                "value": "#2CA02C"
+              },
+              {
+                "test": "datum['Actual Corrected'] > datum.target",
+                "value": "#1F77B4"
+              }
+            ],
+            "value": "#F78272"
+          },
+          "tooltip": [
+            {
+              "field": "Actual Corrected",
+              "type": "quantitative",
+              "title": "Actual"
+            }
+          ]
+        }
+      },
+      {
+        "mark": {
+          "type": "point",
+          "shape": "diamond",
+          "tooltip": true,
+          "stroke": "#000000",
+          "strokeWidth": 1.5,
+          "filled": true,
+          "color": "#F78272"
+        },
+        "encoding": {
+          "x": {"field": "target", "type": "quantitative"},
+          "y": {"field": "FC", "type": "nominal", "title": ""},
+          "size": {"value": 100},
+          "tooltip": [
+            {"field": "target", "type": "quantitative", "title": "Target"},
+            {
+              "field": "Actual Corrected",
+              "type": "quantitative",
+              "title": "Actual"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "config": {
+    "facet": {
+      "spacing": 20,
+      "header": {
+        "labelFontSize": 12,
+        "labelFontWeight": "bold",
+        "titleFontWeight": "bold",
+        "background": "#cccccc"
+      }
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 14,
+      "titleFontWeight": "bold"
+    },
+    "view": {"stroke": "transparent"},
+    "legend": {
+      "title": "",
+      "symbolType": "square",
+      "symbolSize": 100,
+      "labelFontSize": 12
+    }
+  },
+  "datasets": {
+    "legendData": [
+      {"Status": "Meet target", "color": "#2CA02C"},
+      {"Status": "Develop", "color": "#F78272"},
+      {"Status": "Over Target", "color": "#1F77B4"}
+    ]
+  },
+  "encoding": {
+    "color": {
+      "field": "Status",
+      "type": "nominal",
+      "scale": null,
+      "legend": {"title": ""}
+    }
+  },
+  "layer": [
+    {
+      "data": {"name": "legendData"},
+      "mark": {"type": "square", "size": 100},
+      "encoding": {
+        "y": {
+          "field": "Status",
+          "sort": null,
+          "axis": {"title": null, "labels": false}
+        },
+        "x": {"value": 0}
+      }
+    }
+  ]
+};
+    vegaEmbed("#vis", spec, {mode: "vega-lite"}).then(console.log).catch(console.warn);
+  </script>
+</body>
+</html>
