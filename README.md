@@ -19,6 +19,10 @@ Integration with Power BI
   
 ![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/Advanecd%20Heatmap/Heatmap_tenure.png?raw=true)
 
+## Funnel Chart by Deneb
+  
+![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/Funnel%20Chart/Funnel_chart.png?raw=true)
+
 ## Advance Donut chart
 - Reference : 🔥David's Deneb Showcase
   🔗https://github.com/PBI-David/Deneb-Sh...
