@@ -38,5 +38,6 @@ Integration with Power BI
 
 ## Advanced horizontal barplot with facet
 
+![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/ADVANCED%20Bar%20Chart/visualization.png?raw=true)
 ![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/ADVANCED%20Bar%20Chart/Facet_barchart_competency.png?raw=true)
 
