@@ -33,7 +33,7 @@ Integration with Power BI
 
 ## Boxplot chart
 
-![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/Boxplot%20Chart/Boxplot%20Chart.PNG)
+![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/Boxplot%20Chart/Boxplot_age_analysis.png?raw=true)
 
 
 ## Advanced horizontal barplot with facet
