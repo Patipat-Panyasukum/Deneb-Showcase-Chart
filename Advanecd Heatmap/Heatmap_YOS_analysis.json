@@ -1,0 +1,125 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A heatmap showing the count of records by division and tenure categories with data labels on each bin.",
+  "title": {
+    "text": "Year of Service Heatmap Analysis",
+    "subtitle": "A heatmap showing the count of records by department and tenure categories with data labels on each bin.",
+    "font": "Supermarket",
+    "fontSize": 22,
+    "anchor": "start"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/Patipat-Panyasukum/Deneb-Showcase-Chart/main/Advanecd%20Heatmap/data_tenure_ghost.csv",
+    "format": {"type": "csv"}
+  },
+  "width": 600,
+  "height": 600,
+  "padding": {"left": 10, "right": 10, "top": 10, "bottom": 10},
+  "layer": [
+    {
+      "mark": {
+        "type": "rect",
+        "tooltip": true,
+        "stroke": "white",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "tenure_categories",
+          "type": "nominal",
+          "title": "Tenure",
+          "axis": {
+            "labelAngle": 360,
+            "orient": "top",
+            "labelFont": "Supermarket",
+            "labelFontSize": 18,
+            "titleFont": "Supermarket",
+            "titleFontSize": 18,
+            "labelPadding": 5,
+            "titlePadding": 25
+          }
+        },
+        "y": {
+          "field": "division",
+          "type": "nominal",
+          "title": "Department",
+          "axis": {
+            "labelFont": "Supermarket",
+            "labelFontSize": 16,
+            "titleFont": "Supermarket",
+            "titleFontSize": 18,
+            "titlePadding": 25
+          }
+        },
+        "color": {
+          "field": "Countby_tenure",
+          "type": "quantitative",
+          "title": "Count Of employee",
+          "scale": {"type": "sequential", "scheme": "redblue"}
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "baseline": "middle",
+        "align": "center",
+        "dx": 0,
+        "dy": 0,
+        "fontSize": 16,
+        "font": "Supermarket",
+        "fontWeight": "bold"
+      },
+      "encoding": {
+        "x": {"field": "tenure_categories", "type": "nominal"},
+        "y": {"field": "division", "type": "nominal"},
+        "text": {"field": "Countby_tenure", "type": "quantitative"},
+        "color": {"value": "black"}
+      }
+    },
+    {
+      "transform": [
+        {
+          "aggregate": [
+            {"op": "sum", "field": "Countby_tenure", "as": "TotalCount"}
+          ],
+          "groupby": ["tenure_categories"]
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "middle",
+        "fontWeight": "bold",
+        "fontSize": 16,
+        "color": "black",
+        "dy": 320
+      },
+      "encoding": {
+        "x": {"field": "tenure_categories", "type": "nominal"},
+        "text": {"field": "TotalCount", "type": "quantitative"}
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFont": "Supermarket",
+      "labelFontSize": 18,
+      "titleFont": "Supermarket",
+      "titleFontSize": 13
+    },
+    "header": {
+      "labelFont": "Supermarket",
+      "labelFontSize": 18,
+      "titleFont": "Supermarket",
+      "titleFontSize": 13
+    },
+    "legend": {
+      "labelFont": "Supermarket",
+      "labelFontSize": 18,
+      "titleFont": "Supermarket",
+      "titleFontSize": 13
+    },
+    "title": {"font": "Supermarket", "fontSize": 18}
+  }
+}
