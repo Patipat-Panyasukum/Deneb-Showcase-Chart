@@ -17,9 +17,8 @@ Integration with Power BI
 
 ## Heatmap Expreience
   
-![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/Advanecd%20Heatmap/Heatmap_retirement.png?raw=true)
-
 ![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/Advanecd%20Heatmap/Heatmap_YOS_analysis.png?raw=true)
+
 
 ## Funnel Chart by Deneb
   
