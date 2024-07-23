@@ -1,0 +1,689 @@
+﻿name_surname,FC,target,Actual Corrected,self Corrected,job_family
+Miss Anna H.,FC22,1,1,0,Accounting & Finance Family
+Miss Anna H.,FC23,1,1,0,Accounting & Finance Family
+Miss Anna H.,FC24,1,1,0,Accounting & Finance Family
+Miss Anna H.,FC25,1,1,0,Accounting & Finance Family
+Miss Anna H.,FC27,1,1,0,Accounting & Finance Family
+Miss Anna H.,FC21,1,1,1,Accounting & Finance Family
+Miss Anna H.,FC26,1,1,1,Accounting & Finance Family
+Miss Calling NG,FC04,1,0,0,Engineering & Maintenance Family
+Miss Calling NG,FC12,2,0,0,Engineering & Maintenance Family
+Miss Calling NG,FC13,2,0,0,Engineering & Maintenance Family
+Miss Calling NG,FC15,2,0,0,Engineering & Maintenance Family
+Miss Calling NG,FC17,2,0,0,Engineering & Maintenance Family
+Miss Calling NG,FC14,1,1,0,Engineering & Maintenance Family
+Miss Calling NG,FC07,2,0,1,Engineering & Maintenance Family
+Miss Calling NG,FC16,2,0,1,Engineering & Maintenance Family
+Miss Calling NG,FC18,2,0,1,Engineering & Maintenance Family
+Miss Calling NG,FC03,2,1,2,Engineering & Maintenance Family
+Miss Delux P.,FC53,3,2,0,Information Technology Family
+Miss Delux P.,FC54,3,2,0,Information Technology Family
+Miss Delux P.,FC56,3,3,0,Information Technology Family
+Miss Delux P.,FC52,3,3,4,Information Technology Family
+Miss Delux P.,FC55,3,3,4,Information Technology Family
+Miss Delux P.,FC57,3,3,4,Information Technology Family
+Miss Eder D.,FC08,2,1,0,Product Development & Technical Service Family
+Miss Eder D.,FC09,2,1,0,Product Development & Technical Service Family
+Miss Eder D.,FC04,2,2,1,Product Development & Technical Service Family
+Miss Eder D.,FC12,2,2,1,Product Development & Technical Service Family
+Miss Eder D.,FC02,3,3,1,Product Development & Technical Service Family
+Miss Eder D.,FC06,3,3,1,Product Development & Technical Service Family
+Miss Eder D.,FC07,3,3,1,Product Development & Technical Service Family
+Miss Eder D.,FC01,3,2,2,Product Development & Technical Service Family
+Miss Eder D.,FC05,3,3,2,Product Development & Technical Service Family
+Miss Eder D.,FC03,1,2,3,Product Development & Technical Service Family
+Miss Eder D.,FC10,3,3,3,Product Development & Technical Service Family
+Miss Feung C.,FC35,2,2,0,Planning Family
+Miss Feung C.,FC36,2,2,0,Planning Family
+Miss Feung C.,FC34,3,3,1,Planning Family
+Miss Feung C.,FC04,2,2,2,Planning Family
+Miss Feung C.,FC14,2,2,2,Planning Family
+Miss Feung C.,FC12,2,2,3,Planning Family
+Miss Feung C.,FC32,3,2,3,Planning Family
+Miss Feung C.,FC33,3,3,3,Planning Family
+Miss Feung C.,FC31,3,2,4,Planning Family
+Miss Isaree G.,FC43,0,0,0,Administration Family
+Miss Isaree G.,FC44,0,0,0,Administration Family
+Miss Isaree G.,FC47,0,0,0,Administration Family
+Miss Isaree G.,FC67,0,0,0,Administration Family
+Miss Isaree G.,FC49,1,1,0,Administration Family
+Miss Isaree G.,FC45,0,0,1,Administration Family
+Miss Isaree G.,FC06,1,1,1,Administration Family
+Miss Isaree G.,FC46,1,1,2,Administration Family
+Miss Isaree G.,FC48,1,1,2,Administration Family
+Miss Isaree G.,FC50,1,2,2,Administration Family
+Miss Isaree G.,FC51,1,2,2,Administration Family
+Miss Japan lee,FC12,1,1,1,Planning Family
+Miss Japan lee,FC33,1,1,1,Planning Family
+Miss Japan lee,FC36,2,1,1,Planning Family
+Miss Japan lee,FC04,2,2,1,Planning Family
+Miss Japan lee,FC14,2,2,1,Planning Family
+Miss Japan lee,FC34,2,2,1,Planning Family
+Miss Japan lee,FC31,2,2,2,Planning Family
+Miss Japan lee,FC32,2,2,2,Planning Family
+Miss Japan lee,FC35,3,2,2,Planning Family
+Miss Kan pp.,FC45,0,0,0,Administration Family
+Miss Kan pp.,FC47,0,0,0,Administration Family
+Miss Kan pp.,FC67,0,0,0,Administration Family
+Miss Kan pp.,FC46,2,1,0,Administration Family
+Miss Kan pp.,FC48,2,1,0,Administration Family
+Miss Kan pp.,FC43,0,0,1,Administration Family
+Miss Kan pp.,FC44,0,0,1,Administration Family
+Miss Kan pp.,FC50,2,1,1,Administration Family
+Miss Kan pp.,FC51,2,1,1,Administration Family
+Miss Kan pp.,FC49,2,2,1,Administration Family
+Miss Kan pp.,FC06,2,1,2,Administration Family
+Miss Ketsaruta PK.,FC14,1,1,0,Planning Family
+Miss Ketsaruta PK.,FC31,1,1,0,Planning Family
+Miss Ketsaruta PK.,FC33,1,1,0,Planning Family
+Miss Ketsaruta PK.,FC36,2,1,0,Planning Family
+Miss Ketsaruta PK.,FC34,2,2,0,Planning Family
+Miss Ketsaruta PK.,FC12,1,0,1,Planning Family
+Miss Ketsaruta PK.,FC32,1,1,1,Planning Family
+Miss Ketsaruta PK.,FC04,1,1,2,Planning Family
+Miss Ketsaruta PK.,FC35,3,2,3,Planning Family
+Miss Nattharat CA.,FC45,0,0,0,Administration Family
+Miss Nattharat CA.,FC67,0,0,0,Administration Family
+Miss Nattharat CA.,FC49,1,1,0,Administration Family
+Miss Nattharat CA.,FC46,0,0,1,Administration Family
+Miss Nattharat CA.,FC06,1,1,1,Administration Family
+Miss Nattharat CA.,FC43,1,1,1,Administration Family
+Miss Nattharat CA.,FC44,1,1,1,Administration Family
+Miss Nattharat CA.,FC48,1,1,1,Administration Family
+Miss Nattharat CA.,FC50,1,1,1,Administration Family
+Miss Nattharat CA.,FC51,1,1,1,Administration Family
+Miss Nattharat CA.,FC47,2,1,2,Administration Family
+Miss Nitaya HK.,FC02,0,0,0,Purchasing Family
+Miss Nitaya HK.,FC04,0,0,0,Purchasing Family
+Miss Nitaya HK.,FC12,0,0,0,Purchasing Family
+Miss Nitaya HK.,FC28,1,1,1,Purchasing Family
+Miss Nitaya HK.,FC30,1,1,1,Purchasing Family
+Miss Nitaya HK.,FC31,1,1,1,Purchasing Family
+Miss Nitaya HK.,FC29,1,2,2,Purchasing Family
+Miss Nuntana P.,FC04,2,1,0,Engineering & Maintenance Family
+Miss Nuntana P.,FC15,3,2,0,Engineering & Maintenance Family
+Miss Nuntana P.,FC12,2,2,1,Engineering & Maintenance Family
+Miss Nuntana P.,FC14,2,2,1,Engineering & Maintenance Family
+Miss Nuntana P.,FC13,3,3,1,Engineering & Maintenance Family
+Miss Nuntana P.,FC17,3,0,2,Engineering & Maintenance Family
+Miss Nuntana P.,FC03,3,3,2,Engineering & Maintenance Family
+Miss Nuntana P.,FC07,3,3,2,Engineering & Maintenance Family
+Miss Nuntana P.,FC16,3,3,2,Engineering & Maintenance Family
+Miss Nuntana P.,FC18,3,3,3,Engineering & Maintenance Family
+Miss Ora H,FC37,1,0,0,Human Resource Family
+Miss Ora H,FC39,1,0,0,Human Resource Family
+Miss Ora H,FC41,1,0,0,Human Resource Family
+Miss Ora H,FC40,1,1,0,Human Resource Family
+Miss Ora H,FC38,1,1,1,Human Resource Family
+Miss Ora H,FC42,1,2,2,Human Resource Family
+Miss PP James,FC12,1,0,0,Planning Family
+Miss PP James,FC36,1,0,0,Planning Family
+Miss PP James,FC14,1,1,0,Planning Family
+Miss PP James,FC04,1,0,1,Planning Family
+Miss PP James,FC31,1,1,1,Planning Family
+Miss PP James,FC32,1,1,1,Planning Family
+Miss PP James,FC34,2,1,1,Planning Family
+Miss PP James,FC35,1,1,1,Planning Family
+Miss PP James,FC33,2,2,1,Planning Family
+Miss PK Cheong,FC22,1,1,0,Accounting & Finance Family
+Miss PK Cheong,FC23,1,1,0,Accounting & Finance Family
+Miss PK Cheong,FC24,1,1,0,Accounting & Finance Family
+Miss PK Cheong,FC25,1,1,0,Accounting & Finance Family
+Miss PK Cheong,FC27,1,1,0,Accounting & Finance Family
+Miss PK Cheong,FC21,1,1,1,Accounting & Finance Family
+Miss PK Cheong,FC26,1,1,1,Accounting & Finance Family
+Miss Rachi RR.,FC43,0,0,0,Administration Family
+Miss Rachi RR.,FC44,0,0,0,Administration Family
+Miss Rachi RR.,FC45,0,0,0,Administration Family
+Miss Rachi RR.,FC47,0,0,0,Administration Family
+Miss Rachi RR.,FC67,0,0,0,Administration Family
+Miss Rachi RR.,FC06,2,0,1,Administration Family
+Miss Rachi RR.,FC49,2,1,1,Administration Family
+Miss Rachi RR.,FC50,2,1,1,Administration Family
+Miss Rachi RR.,FC46,2,1,2,Administration Family
+Miss Rachi RR.,FC48,2,1,2,Administration Family
+Miss Rachi RR.,FC51,2,1,2,Administration Family
+Miss Sert KJ.,FC04,1,1,0,Planning Family
+Miss Sert KJ.,FC12,1,1,0,Planning Family
+Miss Sert KJ.,FC14,1,1,0,Planning Family
+Miss Sert KJ.,FC31,1,1,0,Planning Family
+Miss Sert KJ.,FC32,1,1,0,Planning Family
+Miss Sert KJ.,FC33,1,1,0,Planning Family
+Miss Sert KJ.,FC36,2,1,0,Planning Family
+Miss Sert KJ.,FC34,2,2,0,Planning Family
+Miss Sert KJ.,FC35,3,2,2,Planning Family
+Miss Andrew K.,FC13,2,1,1,Operation Family
+Miss Andrew K.,FC01,3,2,1,Operation Family
+Miss Andrew K.,FC04,2,2,2,Operation Family
+Miss Andrew K.,FC07,3,2,2,Operation Family
+Miss Andrew K.,FC12,3,2,2,Operation Family
+Miss Andrew K.,FC10,3,2,3,Operation Family
+Miss Andrew K.,FC11,3,2,3,Operation Family
+Miss Siraa OL.,FC04,1,1,0,Planning Family
+Miss Siraa OL.,FC31,1,1,0,Planning Family
+Miss Siraa OL.,FC32,1,1,0,Planning Family
+Miss Siraa OL.,FC33,1,1,0,Planning Family
+Miss Siraa OL.,FC12,1,1,1,Planning Family
+Miss Siraa OL.,FC14,1,1,1,Planning Family
+Miss Siraa OL.,FC36,2,1,1,Planning Family
+Miss Siraa OL.,FC34,2,2,1,Planning Family
+Miss Siraa OL.,FC35,3,3,2,Planning Family
+Miss Jitkoh S.,FC01,1,0,0,Product Development & Technical Service Family
+Miss Jitkoh S.,FC05,1,1,0,Product Development & Technical Service Family
+Miss Jitkoh S.,FC09,2,1,0,Product Development & Technical Service Family
+Miss Jitkoh S.,FC04,1,0,1,Product Development & Technical Service Family
+Miss Jitkoh S.,FC06,2,0,2,Product Development & Technical Service Family
+Miss Jitkoh S.,FC10,2,0,2,Product Development & Technical Service Family
+Miss Jitkoh S.,FC12,1,0,2,Product Development & Technical Service Family
+Miss Jitkoh S.,FC02,1,1,2,Product Development & Technical Service Family
+Miss Jitkoh S.,FC07,2,1,2,Product Development & Technical Service Family
+Miss Jitkoh S.,FC08,2,1,2,Product Development & Technical Service Family
+Miss Jitkoh S.,FC03,1,2,3,Product Development & Technical Service Family
+Miss SL. Sert,FC12,2,2,0,Planning Family
+Miss SL. Sert,FC33,1,0,1,Planning Family
+Miss SL. Sert,FC34,2,1,1,Planning Family
+Miss SL. Sert,FC04,2,2,1,Planning Family
+Miss SL. Sert,FC14,2,2,3,Planning Family
+Miss SL. Sert,FC32,2,2,4,Planning Family
+Miss SL. Sert,FC31,3,3,4,Planning Family
+Miss SL. Sert,FC35,3,3,4,Planning Family
+Miss SL. Sert,FC36,3,3,4,Planning Family
+Miss Wallaya KC.,FC43,0,0,0,Administration Family
+Miss Wallaya KC.,FC44,0,0,0,Administration Family
+Miss Wallaya KC.,FC45,0,0,0,Administration Family
+Miss Wallaya KC.,FC47,0,0,0,Administration Family
+Miss Wallaya KC.,FC67,0,0,0,Administration Family
+Miss Wallaya KC.,FC06,2,1,1,Administration Family
+Miss Wallaya KC.,FC49,2,1,1,Administration Family
+Miss Wallaya KC.,FC46,2,1,2,Administration Family
+Miss Wallaya KC.,FC48,2,1,2,Administration Family
+Miss Wallaya KC.,FC50,2,1,2,Administration Family
+Miss Wallaya KC.,FC51,2,1,2,Administration Family
+Miss Wran PORN.,FC41,2,1,0,Human Resource Family
+Miss Wran PORN.,FC37,2,2,0,Human Resource Family
+Miss Wran PORN.,FC39,2,1,1,Human Resource Family
+Miss Wran PORN.,FC38,2,2,1,Human Resource Family
+Miss Wran PORN.,FC40,2,2,1,Human Resource Family
+Miss Wran PORN.,FC42,2,2,2,Human Resource Family
+Miss HG Rowllay,FC22,2,1,0,Accounting & Finance Family
+Miss HG Rowllay,FC23,1,1,1,Accounting & Finance Family
+Miss HG Rowllay,FC24,1,1,1,Accounting & Finance Family
+Miss HG Rowllay,FC26,2,1,1,Accounting & Finance Family
+Miss HG Rowllay,FC27,2,2,1,Accounting & Finance Family
+Miss HG Rowllay,FC21,2,2,2,Accounting & Finance Family
+Miss HG Rowllay,FC25,2,2,2,Accounting & Finance Family
+MissHadaway IU.,FC45,0,0,0,Administration Family
+MissHadaway IU.,FC67,0,0,0,Administration Family
+MissHadaway IU.,FC47,2,1,0,Administration Family
+MissHadaway IU.,FC44,2,2,0,Administration Family
+MissHadaway IU.,FC48,2,2,0,Administration Family
+MissHadaway IU.,FC49,2,2,0,Administration Family
+MissHadaway IU.,FC46,0,0,1,Administration Family
+MissHadaway IU.,FC43,2,2,1,Administration Family
+MissHadaway IU.,FC50,2,2,1,Administration Family
+MissHadaway IU.,FC51,2,2,1,Administration Family
+MissHadaway IU.,FC06,2,2,2,Administration Family
+Mr. James K.,FC02,2,1,1,Product Development & Technical Service Family
+Mr. James K.,FC10,3,1,1,Product Development & Technical Service Family
+Mr. James K.,FC03,2,0,2,Product Development & Technical Service Family
+Mr. James K.,FC01,2,1,2,Product Development & Technical Service Family
+Mr. James K.,FC04,2,1,2,Product Development & Technical Service Family
+Mr. James K.,FC05,2,1,2,Product Development & Technical Service Family
+Mr. James K.,FC06,2,1,2,Product Development & Technical Service Family
+Mr. James K.,FC07,2,1,2,Product Development & Technical Service Family
+Mr. James K.,FC12,2,1,2,Product Development & Technical Service Family
+Mr. James K.,FC09,2,2,2,Product Development & Technical Service Family
+Mr. James K.,FC08,2,2,3,Product Development & Technical Service Family
+Mr. Art SE.,FC03,1,1,0,Engineering & Maintenance Family
+Mr. Art SE.,FC04,1,1,0,Engineering & Maintenance Family
+Mr. Art SE.,FC12,2,1,0,Engineering & Maintenance Family
+Mr. Art SE.,FC14,1,1,0,Engineering & Maintenance Family
+Mr. Art SE.,FC16,1,1,0,Engineering & Maintenance Family
+Mr. Art SE.,FC17,2,1,0,Engineering & Maintenance Family
+Mr. Art SE.,FC18,1,1,0,Engineering & Maintenance Family
+Mr. Art SE.,FC13,3,2,1,Engineering & Maintenance Family
+Mr. Art SE.,FC15,3,2,1,Engineering & Maintenance Family
+Mr. Art SE.,FC07,2,2,2,Engineering & Maintenance Family
+Mr. BB,FC01,1,1,0,Operation Family
+Mr. BB,FC04,1,1,0,Operation Family
+Mr. BB,FC07,1,1,0,Operation Family
+Mr. BB,FC10,2,1,0,Operation Family
+Mr. BB,FC11,1,1,0,Operation Family
+Mr. BB,FC12,2,1,0,Operation Family
+Mr. BB,FC13,2,1,0,Operation Family
+Mr. BB,FC14,1,1,0,Operation Family
+Mr. Anna MER.,FC03,1,0,0,Engineering & Maintenance Family
+Mr. Anna MER.,FC14,2,2,0,Engineering & Maintenance Family
+Mr. Anna MER.,FC17,3,0,1,Engineering & Maintenance Family
+Mr. Anna MER.,FC04,2,2,1,Engineering & Maintenance Family
+Mr. Anna MER.,FC18,2,2,1,Engineering & Maintenance Family
+Mr. Anna MER.,FC16,2,2,2,Engineering & Maintenance Family
+Mr. Anna MER.,FC07,3,3,2,Engineering & Maintenance Family
+Mr. Anna MER.,FC12,3,3,2,Engineering & Maintenance Family
+Mr. Anna MER.,FC13,3,3,2,Engineering & Maintenance Family
+Mr. Anna MER.,FC15,3,3,2,Engineering & Maintenance Family
+Mr. Chunky Wong,FC20,1,0,0,Safety Family
+Mr. Chunky Wong,FC07,1,1,0,Safety Family
+Mr. Chunky Wong,FC16,1,1,0,Safety Family
+Mr. Chunky Wong,FC18,1,1,0,Safety Family
+Mr. Chunky Wong,FC19,1,1,0,Safety Family
+Mr. Chunky Wong,FC14,1,1,1,Safety Family
+Mr. Dusan CV.,FC61,2,0,0,Sales Family
+Mr. Dusan CV.,FC60,2,1,0,Sales Family
+Mr. Dusan CV.,FC59,2,2,0,Sales Family
+Mr. Dusan CV.,FC28,1,0,1,Sales Family
+Mr. Dusan CV.,FC12,1,1,1,Sales Family
+Mr. Dusan CV.,FC58,2,1,1,Sales Family
+Mr. Dusan CV.,FC04,2,2,1,Sales Family
+Mr. Dusan CV.,FC29,2,2,1,Sales Family
+Mr. Dusan CV.,FC62,2,2,1,Sales Family
+Mr. Wong Suri,FC07,1,0,0,Operation Family
+Mr. Wong Suri,FC01,1,1,0,Operation Family
+Mr. Wong Suri,FC14,1,1,0,Operation Family
+Mr. Wong Suri,FC04,1,1,1,Operation Family
+Mr. Wong Suri,FC11,1,1,1,Operation Family
+Mr. Wong Suri,FC10,2,1,2,Operation Family
+Mr. Wong Suri,FC12,2,1,2,Operation Family
+Mr. Wong Suri,FC13,2,1,2,Operation Family
+Mr. Teng Sura,FC03,1,0,0,Engineering & Maintenance Family
+Mr. Teng Sura,FC07,1,0,0,Engineering & Maintenance Family
+Mr. Teng Sura,FC16,1,0,0,Engineering & Maintenance Family
+Mr. Teng Sura,FC17,1,0,0,Engineering & Maintenance Family
+Mr. Teng Sura,FC18,1,0,0,Engineering & Maintenance Family
+Mr. Teng Sura,FC04,1,1,0,Engineering & Maintenance Family
+Mr. Teng Sura,FC14,1,1,0,Engineering & Maintenance Family
+Mr. Teng Sura,FC12,2,2,0,Engineering & Maintenance Family
+Mr. Teng Sura,FC15,2,0,1,Engineering & Maintenance Family
+Mr. Teng Sura,FC13,2,1,1,Engineering & Maintenance Family
+Mr. Jirasak ChaiL.,FC05,1,0,0,Product Development & Technical Service Family
+Mr. Jirasak ChaiL.,FC07,1,0,0,Product Development & Technical Service Family
+Mr. Jirasak ChaiL.,FC12,1,0,0,Product Development & Technical Service Family
+Mr. Jirasak ChaiL.,FC06,2,1,0,Product Development & Technical Service Family
+Mr. Jirasak ChaiL.,FC04,1,0,1,Product Development & Technical Service Family
+Mr. Jirasak ChaiL.,FC10,2,0,1,Product Development & Technical Service Family
+Mr. Jirasak ChaiL.,FC01,1,1,1,Product Development & Technical Service Family
+Mr. Jirasak ChaiL.,FC09,2,1,1,Product Development & Technical Service Family
+Mr. Jirasak ChaiL.,FC03,1,0,2,Product Development & Technical Service Family
+Mr. Jirasak ChaiL.,FC02,1,1,2,Product Development & Technical Service Family
+Mr. Jirasak ChaiL.,FC08,2,1,2,Product Development & Technical Service Family
+Mr. Katerat YaSU.,FC03,1,1,0,Engineering & Maintenance Family
+Mr. Katerat YaSU.,FC04,2,2,1,Engineering & Maintenance Family
+Mr. Katerat YaSU.,FC14,2,2,1,Engineering & Maintenance Family
+Mr. Katerat YaSU.,FC16,2,2,1,Engineering & Maintenance Family
+Mr. Katerat YaSU.,FC18,2,2,1,Engineering & Maintenance Family
+Mr. Katerat YaSU.,FC12,3,2,2,Engineering & Maintenance Family
+Mr. Katerat YaSU.,FC13,3,2,2,Engineering & Maintenance Family
+Mr. Katerat YaSU.,FC17,3,2,2,Engineering & Maintenance Family
+Mr. Katerat YaSU.,FC07,3,3,2,Engineering & Maintenance Family
+Mr. Katerat YaSU.,FC15,3,3,3,Engineering & Maintenance Family
+Mr. Khamron PQ.,FC03,1,1,0,Engineering & Maintenance Family
+Mr. Khamron PQ.,FC17,1,1,0,Engineering & Maintenance Family
+Mr. Khamron PQ.,FC04,1,1,1,Engineering & Maintenance Family
+Mr. Khamron PQ.,FC07,1,1,1,Engineering & Maintenance Family
+Mr. Khamron PQ.,FC14,1,1,1,Engineering & Maintenance Family
+Mr. Khamron PQ.,FC16,1,1,1,Engineering & Maintenance Family
+Mr. Khamron PQ.,FC18,1,1,1,Engineering & Maintenance Family
+Mr. Khamron PQ.,FC12,2,2,2,Engineering & Maintenance Family
+Mr. Khamron PQ.,FC13,2,2,3,Engineering & Maintenance Family
+Mr. Khamron PQ.,FC15,2,2,3,Engineering & Maintenance Family
+Mr. Noppaluck Sansing,FC12,0,0,0,Planning Family
+Mr. Noppa Luck.,FC31,1,1,0,Planning Family
+Mr. Noppa Luck.,FC32,1,1,0,Planning Family
+Mr. Noppa Luck.,FC35,1,1,0,Planning Family
+Mr. Noppa Luck.,FC36,1,1,0,Planning Family
+Mr. Noppa Luck.,FC34,2,2,0,Planning Family
+Mr. Noppa Luck.,FC04,0,0,1,Planning Family
+Mr. Noppa Luck.,FC14,1,1,1,Planning Family
+Mr. Noppa Luck.,FC33,2,2,1,Planning Family
+Mr. Phe Wong swei,FC14,2,2,2,Operation Family
+Mr. Phe Wong swei,FC01,3,3,2,Operation Family
+Mr. Phe Wong swei,FC04,3,3,3,Operation Family
+Mr. Phe Wong swei,FC07,4,3,3,Operation Family
+Mr. Phe Wong swei,FC10,3,3,3,Operation Family
+Mr. Phe Wong swei,FC11,4,3,3,Operation Family
+Mr. Phe Wong swei,FC13,3,3,3,Operation Family
+Mr. Phe Wong swei,FC12,4,4,4,Operation Family
+Mr. Phutai TA.,FC11,1,0,0,Operation Family
+Mr. Phutai TA.,FC14,1,1,0,Operation Family
+Mr. Phutai TA.,FC07,1,0,1,Operation Family
+Mr. Phutai TA.,FC01,1,1,1,Operation Family
+Mr. Phutai TA.,FC04,1,1,1,Operation Family
+Mr. Phutai TA.,FC13,2,1,1,Operation Family
+Mr. Phutai TA.,FC10,2,1,2,Operation Family
+Mr. Phutai TA.,FC12,2,1,2,Operation Family
+Mr. Pichet Cyunha,FC02,0,0,0,Purchasing Family
+Mr. Pichet Cyunha,FC31,2,2,1,Purchasing Family
+Mr. Pichet Cyunha,FC04,0,2,2,Purchasing Family
+Mr. Pichet Cyunha,FC12,0,2,2,Purchasing Family
+Mr. Pichet Cyunha,FC28,1,2,2,Purchasing Family
+Mr. Pichet Cyunha,FC29,1,2,2,Purchasing Family
+Mr. Pichet Cyunha,FC30,2,2,2,Purchasing Family
+Mr. PE Risa,FC01,3,2,0,Operation Family
+Mr. PE Risa,FC04,2,1,1,Operation Family
+Mr. PE Risa,FC07,3,1,1,Operation Family
+Mr. PE Risa,FC11,3,1,1,Operation Family
+Mr. PE Risa,FC14,1,1,1,Operation Family
+Mr. PE Risa,FC10,2,1,2,Operation Family
+Mr. PE Risa,FC13,2,1,2,Operation Family
+Mr. PE Risa,FC12,3,2,2,Operation Family
+Mr. Piyamate TG.,FC01,1,1,0,Operation Family
+Mr. Piyamate TG.,FC07,1,1,0,Operation Family
+Mr. Piyamate TG.,FC11,1,1,0,Operation Family
+Mr. Piyamate TG.,FC14,1,1,0,Operation Family
+Mr. Piyamate TG.,FC04,1,1,1,Operation Family
+Mr. Piyamate TG.,FC10,2,1,1,Operation Family
+Mr. Piyamate TG.,FC12,2,1,1,Operation Family
+Mr. Piyamate TG.,FC13,2,1,1,Operation Family
+Mr. Porkawer DF.,FC23,1,0,0,Accounting & Finance Family
+Mr. Porkawer DF.,FC25,3,0,0,Accounting & Finance Family
+Mr. Porkawer DF.,FC22,3,2,2,Accounting & Finance Family
+Mr. Porkawer DF.,FC27,3,3,2,Accounting & Finance Family
+Mr. Porkawer DF.,FC21,3,2,3,Accounting & Finance Family
+Mr. Porkawer DF.,FC24,2,2,3,Accounting & Finance Family
+Mr. Porkawer DF.,FC26,3,2,3,Accounting & Finance Family
+Mr. Po Sok,FC03,1,0,0,Engineering & Maintenance Family
+Mr. Po Sok,FC04,1,0,0,Engineering & Maintenance Family
+Mr. Po Sok,FC17,2,0,0,Engineering & Maintenance Family
+Mr. Po Sok,FC07,2,1,0,Engineering & Maintenance Family
+Mr. Po Sok,FC12,2,1,0,Engineering & Maintenance Family
+Mr. Po Sok,FC13,3,1,0,Engineering & Maintenance Family
+Mr. Po Sok,FC14,1,1,0,Engineering & Maintenance Family
+Mr. Po Sok,FC16,1,1,1,Engineering & Maintenance Family
+Mr. Po Sok,FC18,1,1,1,Engineering & Maintenance Family
+Mr. Po Sok,FC15,3,1,2,Engineering & Maintenance Family
+Mr. Prawit KA.,FC01,1,1,0,Operation Family
+Mr. Prawit KA.,FC04,1,1,0,Operation Family
+Mr. Prawit KA.,FC07,1,1,0,Operation Family
+Mr. Prawit KA.,FC11,1,1,0,Operation Family
+Mr. Prawit KA.,FC13,2,1,0,Operation Family
+Mr. Prawit KA.,FC14,1,1,0,Operation Family
+Mr. Prawit KA.,FC10,2,1,1,Operation Family
+Mr. Prawit KA.,FC12,2,1,1,Operation Family
+Mr. Riito Richcy,FC07,1,0,0,Operation Family
+Mr. Riito Richcy,FC01,1,1,0,Operation Family
+Mr. Riito Richcy,FC14,1,1,1,Operation Family
+Mr. Riito Richcy,FC10,2,1,2,Operation Family
+Mr. Riito Richcy,FC11,1,1,2,Operation Family
+Mr. Riito Richcy,FC13,2,1,2,Operation Family
+Mr. Riito Richcy,FC04,1,1,3,Operation Family
+Mr. Riito Richcy,FC12,2,1,3,Operation Family
+Mr. Saraw WQ.,FC52,1,1,1,Information Technology Family
+Mr. Saraw WQ.,FC56,2,2,1,Information Technology Family
+Mr. Saraw WQ.,FC57,2,2,2,Information Technology Family
+Mr. Saraw WQ.,FC53,2,2,3,Information Technology Family
+Mr. Saraw WQ.,FC54,2,2,3,Information Technology Family
+Mr. Saraw WQ.,FC55,2,2,3,Information Technology Family
+Mr. ST Johnsenberg,FC07,2,2,2,Safety Family
+Mr. ST Johnsenberg,FC16,2,2,2,Safety Family
+Mr. ST Johnsenberg,FC18,2,2,2,Safety Family
+Mr. ST Johnsenberg,FC14,3,3,2,Safety Family
+Mr. ST Johnsenberg,FC19,2,2,3,Safety Family
+Mr. ST Johnsenberg,FC20,3,2,3,Safety Family
+Mr. Soonthron RFG.,FC03,1,1,0,Engineering & Maintenance Family
+Mr. Soonthron RFG.,FC04,1,1,0,Engineering & Maintenance Family
+Mr. Soonthron RFG.,FC07,1,1,0,Engineering & Maintenance Family
+Mr. Soonthron RFG.,FC12,2,2,0,Engineering & Maintenance Family
+Mr. Soonthron RFG.,FC14,1,1,1,Engineering & Maintenance Family
+Mr. Soonthron RFG.,FC17,1,1,1,Engineering & Maintenance Family
+Mr. Soonthron RFG.,FC18,1,1,1,Engineering & Maintenance Family
+Mr. Soonthron RFG.,FC16,1,1,2,Engineering & Maintenance Family
+Mr. Soonthron RFG.,FC13,2,2,3,Engineering & Maintenance Family
+Mr. Soonthron RFG.,FC15,2,2,3,Engineering & Maintenance Family
+Mr.Tian Mifu,FC03,1,1,0,Engineering & Maintenance Family
+Mr.Tian Mifu,FC04,1,1,1,Engineering & Maintenance Family
+Mr.Tian Mifu,FC14,1,1,1,Engineering & Maintenance Family
+Mr.Tian Mifu,FC16,1,1,1,Engineering & Maintenance Family
+Mr.Tian Mifu,FC17,1,1,1,Engineering & Maintenance Family
+Mr.Tian Mifu,FC18,1,1,1,Engineering & Maintenance Family
+Mr.Tian Mifu,FC07,1,1,3,Engineering & Maintenance Family
+Mr.Tian Mifu,FC12,2,2,3,Engineering & Maintenance Family
+Mr.Tian Mifu,FC13,2,2,4,Engineering & Maintenance Family
+Mr.Tian Mifu,FC15,2,2,4,Engineering & Maintenance Family
+Mr. Erfun Sert.,FC03,1,0,0,Engineering & Maintenance Family
+Mr. Erfun Sert.,FC07,1,0,0,Engineering & Maintenance Family
+Mr. Erfun Sert.,FC16,1,0,0,Engineering & Maintenance Family
+Mr. Erfun Sert.,FC17,1,0,0,Engineering & Maintenance Family
+Mr. Erfun Sert.,FC18,1,0,0,Engineering & Maintenance Family
+Mr. Erfun Sert.,FC04,1,1,0,Engineering & Maintenance Family
+Mr. Erfun Sert.,FC14,1,1,0,Engineering & Maintenance Family
+Mr. Erfun Sert.,FC12,2,2,0,Engineering & Maintenance Family
+Mr. Erfun Sert.,FC15,2,0,1,Engineering & Maintenance Family
+Mr. Erfun Sert.,FC13,2,2,1,Engineering & Maintenance Family
+Mr. Achi O.,FC03,1,0,0,Product Development & Technical Service Family
+Mr. Achi O.,FC08,1,0,0,Product Development & Technical Service Family
+Mr. Achi O.,FC09,1,0,0,Product Development & Technical Service Family
+Mr. Achi O.,FC05,2,2,0,Product Development & Technical Service Family
+Mr. Achi O.,FC02,1,0,1,Product Development & Technical Service Family
+Mr. Achi O.,FC07,1,0,1,Product Development & Technical Service Family
+Mr. Achi O.,FC01,1,1,2,Product Development & Technical Service Family
+Mr. Achi O.,FC04,1,1,2,Product Development & Technical Service Family
+Mr. Achi O.,FC06,2,2,2,Product Development & Technical Service Family
+Mr. Achi O.,FC12,1,2,2,Product Development & Technical Service Family
+Mr. Achi O.,FC10,2,2,3,Product Development & Technical Service Family
+Mr. Marcus LOF.,FC11,2,1,0,Operation Family
+Mr. Marcus LOF.,FC13,2,1,0,Operation Family
+Mr. Marcus LOF.,FC14,1,1,0,Operation Family
+Mr. Marcus LOF.,FC04,1,0,1,Operation Family
+Mr. Marcus LOF.,FC01,2,1,1,Operation Family
+Mr. Marcus LOF.,FC10,2,1,1,Operation Family
+Mr. Marcus LOF.,FC12,2,1,1,Operation Family
+Mr. Marcus LOF.,FC07,2,1,2,Operation Family
+Mr. Thanatos HG.,FC12,2,2,1,Product Development & Technical Service Family
+Mr. Thanatos HG.,FC01,3,3,2,Product Development & Technical Service Family
+Mr. Thanatos HG.,FC04,3,3,2,Product Development & Technical Service Family
+Mr. Thanatos HG.,FC05,3,3,2,Product Development & Technical Service Family
+Mr. Thanatos HG.,FC06,3,3,2,Product Development & Technical Service Family
+Mr. Thanatos HG.,FC07,3,3,2,Product Development & Technical Service Family
+Mr. Thanatos HG.,FC10,3,3,2,Product Development & Technical Service Family
+Mr. Thanatos HG.,FC02,3,3,3,Product Development & Technical Service Family
+Mr. Thanatos HG.,FC03,3,3,3,Product Development & Technical Service Family
+Mr. Thanatos HG.,FC08,3,3,4,Product Development & Technical Service Family
+Mr. Thanatos HG.,FC09,3,3,4,Product Development & Technical Service Family
+Mr. T Tiger K.,FC03,1,0,0,Product Development & Technical Service Family
+Mr. T Tiger K.,FC09,2,0,0,Product Development & Technical Service Family
+Mr. T Tiger K.,FC08,2,1,0,Product Development & Technical Service Family
+Mr. T Tiger K.,FC02,2,0,1,Product Development & Technical Service Family
+Mr. T Tiger K.,FC12,2,0,1,Product Development & Technical Service Family
+Mr. T Tiger K.,FC01,2,1,1,Product Development & Technical Service Family
+Mr. T Tiger K.,FC07,2,2,1,Product Development & Technical Service Family
+Mr. T Tiger K.,FC04,2,1,2,Product Development & Technical Service Family
+Mr. T Tiger K.,FC05,2,1,2,Product Development & Technical Service Family
+Mr. T Tiger K.,FC06,2,2,2,Product Development & Technical Service Family
+Mr. T Tiger K.,FC10,3,2,2,Product Development & Technical Service Family
+Mr. TK,FC04,1,0,0,Engineering & Maintenance Family
+Mr. TK,FC07,1,0,0,Engineering & Maintenance Family
+Mr. TK,FC17,1,0,0,Engineering & Maintenance Family
+Mr. TK,FC12,2,1,0,Engineering & Maintenance Family
+Mr. TK,FC14,1,1,1,Engineering & Maintenance Family
+Mr. TK,FC16,1,1,1,Engineering & Maintenance Family
+Mr. TK,FC18,1,1,1,Engineering & Maintenance Family
+Mr. TK,FC13,2,2,1,Engineering & Maintenance Family
+Mr. TK,FC03,2,2,3,Engineering & Maintenance Family
+Mr. TK,FC15,2,2,4,Engineering & Maintenance Family
+Mr. Trainner K.,FC04,2,0,0,Product Development & Technical Service Family
+Mr. Trainner K.,FC08,2,0,0,Product Development & Technical Service Family
+Mr. Trainner K.,FC02,2,1,0,Product Development & Technical Service Family
+Mr. Trainner K.,FC05,2,1,0,Product Development & Technical Service Family
+Mr. Trainner K.,FC01,2,2,0,Product Development & Technical Service Family
+Mr. Trainner K.,FC06,2,2,0,Product Development & Technical Service Family
+Mr. Trainner K.,FC03,1,0,1,Product Development & Technical Service Family
+Mr. Trainner K.,FC09,2,0,1,Product Development & Technical Service Family
+Mr. Trainner K.,FC12,2,0,1,Product Development & Technical Service Family
+Mr. Trainner K.,FC07,2,1,1,Product Development & Technical Service Family
+Mr. Trainner K.,FC10,3,1,1,Product Development & Technical Service Family
+Mr. UK brunson,FC38,2,2,2,Human Resource Family
+Mr. UK brunson,FC42,2,2,2,Human Resource Family
+Mr. UK brunson,FC40,3,3,2,Human Resource Family
+Mr. UK brunson,FC41,3,2,3,Human Resource Family
+Mr. UK brunson,FC37,3,3,3,Human Resource Family
+Mr. UK brunson,FC39,3,3,3,Human Resource Family
+Mr. Belling H.,FC13,3,2,1,Operation Family
+Mr. Belling H.,FC01,3,2,2,Operation Family
+Mr. Belling H.,FC10,3,2,2,Operation Family
+Mr. Belling H.,FC04,3,2,3,Operation Family
+Mr. Belling H.,FC11,3,2,3,Operation Family
+Mr. Belling H.,FC14,2,2,3,Operation Family
+Mr. Belling H.,FC07,3,3,3,Operation Family
+Mr. Belling H.,FC12,4,3,4,Operation Family
+Mr. Butler S.,FC57,1,1,1,Information Technology Family
+Mr. Butler S.,FC52,0,0,2,Information Technology Family
+Mr. Butler S.,FC53,1,1,2,Information Technology Family
+Mr. Butler S.,FC54,1,1,2,Information Technology Family
+Mr. Butler S.,FC56,1,1,2,Information Technology Family
+Mr. Butler S.,FC55,1,1,3,Information Technology Family
+Mrs. Randmoe S.,FC44,0,0,0,Administration Family
+Mrs. Randmoe S.,FC47,0,0,0,Administration Family
+Mrs. Randmoe S.,FC43,0,0,1,Administration Family
+Mrs. Randmoe S.,FC67,0,0,1,Administration Family
+Mrs. Randmoe S.,FC06,2,2,1,Administration Family
+Mrs. Randmoe S.,FC48,2,2,1,Administration Family
+Mrs. Randmoe S.,FC51,3,2,1,Administration Family
+Mrs. Randmoe S.,FC46,0,0,2,Administration Family
+Mrs. Randmoe S.,FC45,2,2,2,Administration Family
+Mrs. Randmoe S.,FC49,3,3,2,Administration Family
+Mrs. Randmoe S.,FC50,3,3,2,Administration Family
+Mrs. OT L,FC04,0,0,0,Planning Family
+Mrs. OT L,FC12,0,0,0,Planning Family
+Mrs. OT L,FC14,1,1,0,Planning Family
+Mrs. OT L,FC31,1,1,0,Planning Family
+Mrs. OT L,FC32,1,1,0,Planning Family
+Mrs. OT L,FC36,1,0,1,Planning Family
+Mrs. OT L,FC35,1,1,2,Planning Family
+Mrs. OT L,FC34,2,1,3,Planning Family
+Mrs. OT L,FC33,2,2,4,Planning Family
+Mrs. Kennedy L.,FC50,2,0,1,Administration Family
+Mrs. Kennedy L.,FC67,0,0,1,Administration Family
+Mrs. Kennedy L.,FC51,2,1,1,Administration Family
+Mrs. Kennedy L.,FC43,0,0,2,Administration Family
+Mrs. Kennedy L.,FC44,0,0,2,Administration Family
+Mrs. Kennedy L.,FC45,0,0,2,Administration Family
+Mrs. Kennedy L.,FC47,0,0,2,Administration Family
+Mrs. Kennedy L.,FC49,2,0,2,Administration Family
+Mrs. Kennedy L.,FC46,2,1,2,Administration Family
+Mrs. Kennedy L.,FC48,2,1,2,Administration Family
+Mrs. Kennedy L.,FC06,2,2,2,Administration Family
+Mrs. Piya Q.,FC07,2,2,0,Safety Family
+Mrs. Piya Q.,FC14,2,2,0,Safety Family
+Mrs. Piya Q.,FC16,2,2,0,Safety Family
+Mrs. Piya Q.,FC18,2,2,0,Safety Family
+Mrs. Piya Q.,FC19,2,2,0,Safety Family
+Mrs. Piya Q.,FC20,2,2,1,Safety Family
+Mrs. Sewan G.,FC44,0,0,0,Administration Family
+Mrs. Sewan G.,FC47,0,0,0,Administration Family
+Mrs. Sewan G.,FC67,0,0,0,Administration Family
+Mrs. Sewan G.,FC50,2,1,0,Administration Family
+Mrs. Sewan G.,FC43,0,0,1,Administration Family
+Mrs. Sewan G.,FC45,0,0,1,Administration Family
+Mrs. Sewan G.,FC46,2,2,1,Administration Family
+Mrs. Sewan G.,FC49,2,2,1,Administration Family
+Mrs. Sewan G.,FC51,2,2,1,Administration Family
+Mrs. Sewan G.,FC06,2,2,2,Administration Family
+Mrs. Sewan G.,FC48,2,2,2,Administration Family
+Mrs. Micheal BKK.,FC10,2,1,0,Product Development & Technical Service Family
+Mrs. Micheal BKK.,FC12,1,1,0,Product Development & Technical Service Family
+Mrs. Micheal BKK.,FC05,2,2,0,Product Development & Technical Service Family
+Mrs. Micheal BKK.,FC01,1,1,1,Product Development & Technical Service Family
+Mrs. Micheal BKK.,FC02,1,1,1,Product Development & Technical Service Family
+Mrs. Micheal BKK.,FC04,1,1,1,Product Development & Technical Service Family
+Mrs. Micheal BKK.,FC06,2,1,1,Product Development & Technical Service Family
+Mrs. Micheal BKK.,FC07,1,1,1,Product Development & Technical Service Family
+Mrs. Micheal BKK.,FC09,1,1,1,Product Development & Technical Service Family
+Mrs. Micheal BKK.,FC03,1,1,2,Product Development & Technical Service Family
+Mrs. Micheal BKK.,FC08,1,1,2,Product Development & Technical Service Family
+Mrs. Vekas B.,FC20,1,0,0,Safety Family
+Mrs. Vekas B.,FC07,1,1,0,Safety Family
+Mrs. Vekas B.,FC14,1,1,0,Safety Family
+Mrs. Vekas B.,FC16,1,1,0,Safety Family
+Mrs. Vekas B.,FC18,1,1,0,Safety Family
+Mrs. Vekas B.,FC19,1,1,0,Safety Family
+Mrs. Wammanyama P.,FC23,1,0,1,Accounting & Finance Family
+Mrs. Wammanyama P.,FC24,2,2,2,Accounting & Finance Family
+Mrs. Wammanyama P.,FC21,3,2,3,Accounting & Finance Family
+Mrs. Wammanyama P.,FC22,3,2,3,Accounting & Finance Family
+Mrs. Wammanyama P.,FC25,3,2,3,Accounting & Finance Family
+Mrs. Wammanyama P.,FC26,3,2,3,Accounting & Finance Family
+Mrs. Wammanyama P.,FC27,3,2,3,Accounting & Finance Family
+Ms. Shikaru L.,FC22,1,0,0,Accounting & Finance Family
+Ms. Shikaru L.,FC23,1,0,0,Accounting & Finance Family
+Ms. Shikaru L.,FC25,1,0,0,Accounting & Finance Family
+Ms. Shikaru L.,FC24,1,0,1,Accounting & Finance Family
+Ms. Shikaru L.,FC27,1,0,1,Accounting & Finance Family
+Ms. Shikaru L.,FC21,1,1,1,Accounting & Finance Family
+Ms. Shikaru L.,FC26,1,1,1,Accounting & Finance Family
+Ms. CJ. Konh,FC39,1,0,0,Human Resource Family
+Ms. CJ. Konh,FC40,1,0,0,Human Resource Family
+Ms. CJ. Konh,FC41,1,0,1,Human Resource Family
+Ms. CJ. Konh,FC37,1,1,1,Human Resource Family
+Ms. CJ. Konh,FC38,2,1,1,Human Resource Family
+Ms. CJ. Konh,FC42,1,1,1,Human Resource Family
+Ms. Mikan K.,FC23,1,0,0,Accounting & Finance Family
+Ms. Mikan K.,FC25,2,0,0,Accounting & Finance Family
+Ms. Mikan K.,FC27,2,1,0,Accounting & Finance Family
+Ms. Mikan K.,FC21,2,2,0,Accounting & Finance Family
+Ms. Mikan K.,FC26,2,2,0,Accounting & Finance Family
+Ms. Mikan K.,FC24,1,1,1,Accounting & Finance Family
+Ms. Mikan K.,FC22,2,2,1,Accounting & Finance Family
+Ms. Bronny J.,FC22,1,0,0,Accounting & Finance Family
+Ms. Bronny J.,FC25,1,0,0,Accounting & Finance Family
+Ms. Bronny J.,FC21,1,1,0,Accounting & Finance Family
+Ms. Bronny J.,FC24,1,1,0,Accounting & Finance Family
+Ms. Bronny J.,FC26,2,1,0,Accounting & Finance Family
+Ms. Bronny J.,FC23,2,1,1,Accounting & Finance Family
+Ms. Bronny J.,FC27,2,1,1,Accounting & Finance Family
+Ms. Jarret L.,FC60,1,0,0,Sales Family
+Ms. Jarret L.,FC59,2,2,0,Sales Family
+Ms. Jarret L.,FC28,1,1,1,Sales Family
+Ms. Jarret L.,FC58,2,1,1,Sales Family
+Ms. Jarret L.,FC04,1,1,2,Sales Family
+Ms. Jarret L.,FC12,1,1,2,Sales Family
+Ms. Jarret L.,FC62,2,1,2,Sales Family
+Ms. Jarret L.,FC29,1,2,2,Sales Family
+Ms. Jarret L.,FC61,1,2,2,Sales Family
+Ms. Kast P,FC28,1,0,0,Sales Family
+Ms. Kast P,FC60,1,0,0,Sales Family
+Ms. Kast P,FC61,1,0,0,Sales Family
+Ms. Kast P,FC62,1,0,0,Sales Family
+Ms. Kast P,FC59,1,1,0,Sales Family
+Ms. Kast P,FC04,1,1,1,Sales Family
+Ms. Kast P,FC12,1,1,1,Sales Family
+Ms. Kast P,FC58,1,1,1,Sales Family
+Ms. Kast P,FC29,1,1,2,Sales Family
+Ms.TP John,FC43,1,0,0,Administration Family
+Ms.TP John,FC45,0,0,0,Administration Family
+Ms.TP John,FC46,0,0,0,Administration Family
+Ms.TP John,FC47,1,0,0,Administration Family
+Ms.TP John,FC67,0,0,0,Administration Family
+Ms.TP John,FC44,1,1,0,Administration Family
+Ms.TP John,FC49,1,1,0,Administration Family
+Ms.TP John,FC51,1,1,0,Administration Family
+Ms.TP John,FC48,1,0,1,Administration Family
+Ms.TP John,FC50,1,0,1,Administration Family
+Ms.TP John,FC06,1,1,1,Administration Family
+Ms. Diamond F.,FC45,0,0,0,Administration Family
+Ms. Diamond F.,FC46,0,0,0,Administration Family
+Ms. Diamond F.,FC67,0,0,0,Administration Family
+Ms. Diamond F.,FC47,2,1,0,Administration Family
+Ms. Diamond F.,FC49,3,3,0,Administration Family
+Ms. Diamond F.,FC48,3,2,1,Administration Family
+Ms. Diamond F.,FC50,3,2,1,Administration Family
+Ms. Diamond F.,FC51,3,3,1,Administration Family
+Ms. Diamond F.,FC43,2,2,2,Administration Family
+Ms. Diamond F.,FC44,2,2,2,Administration Family
+Ms. Diamond F.,FC06,3,3,2,Administration Family
+Ms. THAY EK.,FC44,0,0,0,Administration Family
+Ms. THAY EK.,FC46,0,0,0,Administration Family
+Ms. THAY EK.,FC40,2,1,0,Human Resource Family
+Ms. THAY EK.,FC41,1,1,0,Human Resource Family
+Ms. THAY EK.,FC47,2,1,0,Administration Family
+Ms. THAY EK.,FC37,2,2,0,Human Resource Family
+Ms. THAY EK.,FC39,2,2,0,Human Resource Family
+Ms. THAY EK.,FC49,3,3,0,Administration Family
+Ms. THAY EK.,FC42,2,2,1,Human Resource Family
+Ms. THAY EK.,FC43,2,2,1,Administration Family
+Ms. THAY EK.,FC67,2,2,1,Administration Family
+Ms. THAY EK.,FC45,2,3,1,Administration Family
+Ms. THAY EK.,FC48,3,3,1,Administration Family
+Ms. THAY EK.,FC38,3,2,2,Human Resource Family
+Ms. THAY EK.,FC06,3,3,2,Administration Family
+Ms. THAY EK.,FC50,3,3,2,Administration Family
+Ms. THAY EK.,FC51,3,3,2,Administration Family
