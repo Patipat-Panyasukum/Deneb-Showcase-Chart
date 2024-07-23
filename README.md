@@ -17,7 +17,7 @@ Integration with Power BI
 
 ## Heatmap Expreience
   
-![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/Advanecd%20Heatmap/Heatmap%20Expreience.PNG?raw=true)
+![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/Advanecd%20Heatmap/Retirement_heatmap.png?raw=true)
 
 ## Advance Donut chart
 - Reference : 🔥David's Deneb Showcase
