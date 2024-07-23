@@ -1,0 +1,558 @@
+﻿Age,division
+26,Administrative group
+27,Administrative group
+31,Administrative group
+32,Administrative group
+35,Administrative group
+36,Administrative group
+37,Administrative group
+39,Administrative group
+41,Administrative group
+42,Administrative group
+45,Administrative group
+46,Administrative group
+47,Administrative group
+48,Administrative group
+50,Administrative group
+51,Administrative group
+52,Administrative group
+53,Administrative group
+54,Administrative group
+60,Administrative group
+28,Advertising and Public Relations Department
+29,Advertising and Public Relations Department
+30,Advertising and Public Relations Department
+31,Advertising and Public Relations Department
+33,Advertising and Public Relations Department
+34,Advertising and Public Relations Department
+35,Advertising and Public Relations Department
+36,Advertising and Public Relations Department
+37,Advertising and Public Relations Department
+38,Advertising and Public Relations Department
+39,Advertising and Public Relations Department
+40,Advertising and Public Relations Department
+41,Advertising and Public Relations Department
+43,Advertising and Public Relations Department
+45,Advertising and Public Relations Department
+46,Advertising and Public Relations Department
+47,Advertising and Public Relations Department
+48,Advertising and Public Relations Department
+49,Advertising and Public Relations Department
+51,Advertising and Public Relations Department
+52,Advertising and Public Relations Department
+53,Advertising and Public Relations Department
+55,Advertising and Public Relations Department
+56,Advertising and Public Relations Department
+58,Advertising and Public Relations Department
+60,Advertising and Public Relations Department
+24,Finance department
+26,Finance department
+27,Finance department
+29,Finance department
+32,Finance department
+33,Finance department
+34,Finance department
+38,Finance department
+41,Finance department
+45,Finance department
+46,Finance department
+48,Finance department
+49,Finance department
+52,Finance department
+53,Finance department
+54,Finance department
+55,Finance department
+56,Finance department
+57,Finance department
+58,Finance department
+59,Finance department
+60,Finance department
+27,Activities Department
+30,Activities Department
+31,Activities Department
+34,Activities Department
+39,Activities Department
+40,Activities Department
+44,Activities Department
+45,Activities Department
+47,Activities Department
+48,Activities Department
+51,Activities Department
+53,Activities Department
+54,Activities Department
+56,Activities Department
+57,Activities Department
+58,Activities Department
+59,Activities Department
+60,Activities Department
+27,Digital and Information Technology Department
+32,Digital and Information Technology Department
+34,Digital and Information Technology Department
+35,Digital and Information Technology Department
+36,Digital and Information Technology Department
+37,Digital and Information Technology Department
+38,Digital and Information Technology Department
+39,Digital and Information Technology Department
+40,Digital and Information Technology Department
+41,Digital and Information Technology Department
+43,Digital and Information Technology Department
+45,Digital and Information Technology Department
+46,Digital and Information Technology Department
+48,Digital and Information Technology Department
+49,Digital and Information Technology Department
+51,Digital and Information Technology Department
+52,Digital and Information Technology Department
+53,Digital and Information Technology Department
+56,Digital and Information Technology Department
+60,Digital and Information Technology Department
+25,Internal Audit Department
+26,Internal Audit Department
+30,Internal Audit Department
+36,Internal Audit Department
+41,Internal Audit Department
+43,Internal Audit Department
+44,Internal Audit Department
+49,Internal Audit Department
+50,Internal Audit Department
+52,Internal Audit Department
+55,Internal Audit Department
+56,Internal Audit Department
+29,Monitoring and Risk Management Department
+30,Monitoring and Risk Management Department
+31,Monitoring and Risk Management Department
+32,Monitoring and Risk Management Department
+33,Monitoring and Risk Management Department
+34,Monitoring and Risk Management Department
+35,Monitoring and Risk Management Department
+36,Monitoring and Risk Management Department
+37,Monitoring and Risk Management Department
+40,Monitoring and Risk Management Department
+41,Monitoring and Risk Management Department
+43,Monitoring and Risk Management Department
+44,Monitoring and Risk Management Department
+49,Monitoring and Risk Management Department
+50,Monitoring and Risk Management Department
+53,Monitoring and Risk Management Department
+55,Monitoring and Risk Management Department
+56,Monitoring and Risk Management Department
+60,Monitoring and Risk Management Department
+27,Human Resources Department
+28,Human Resources Department
+29,Human Resources Department
+30,Human Resources Department
+31,Human Resources Department
+32,Human Resources Department
+34,Human Resources Department
+35,Human Resources Department
+36,Human Resources Department
+37,Human Resources Department
+39,Human Resources Department
+40,Human Resources Department
+41,Human Resources Department
+42,Human Resources Department
+43,Human Resources Department
+44,Human Resources Department
+46,Human Resources Department
+47,Human Resources Department
+48,Human Resources Department
+51,Human Resources Department
+55,Human Resources Department
+56,Human Resources Department
+58,Human Resources Department
+59,Human Resources Department
+26,Marketing Services Department
+27,Marketing Services Department
+28,Marketing Services Department
+29,Marketing Services Department
+30,Marketing Services Department
+32,Marketing Services Department
+34,Marketing Services Department
+36,Marketing Services Department
+37,Marketing Services Department
+38,Marketing Services Department
+39,Marketing Services Department
+40,Marketing Services Department
+42,Marketing Services Department
+43,Marketing Services Department
+44,Marketing Services Department
+45,Marketing Services Department
+46,Marketing Services Department
+47,Marketing Services Department
+48,Marketing Services Department
+49,Marketing Services Department
+50,Marketing Services Department
+52,Marketing Services Department
+53,Marketing Services Department
+54,Marketing Services Department
+55,Marketing Services Department
+56,Marketing Services Department
+57,Marketing Services Department
+58,Marketing Services Department
+59,Marketing Services Department
+60,Marketing Services Department
+23,General Administration Department
+24,General Administration Department
+26,General Administration Department
+27,General Administration Department
+28,General Administration Department
+29,General Administration Department
+30,General Administration Department
+31,General Administration Department
+33,General Administration Department
+34,General Administration Department
+35,General Administration Department
+36,General Administration Department
+37,General Administration Department
+38,General Administration Department
+39,General Administration Department
+42,General Administration Department
+43,General Administration Department
+44,General Administration Department
+45,General Administration Department
+46,General Administration Department
+47,General Administration Department
+48,General Administration Department
+49,General Administration Department
+50,General Administration Department
+51,General Administration Department
+52,General Administration Department
+53,General Administration Department
+54,General Administration Department
+55,General Administration Department
+56,General Administration Department
+57,General Administration Department
+58,General Administration Department
+59,General Administration Department
+60,General Administration Department
+26,Accounting and Budget Department
+27,Accounting and Budget Department
+28,Accounting and Budget Department
+29,Accounting and Budget Department
+30,Accounting and Budget Department
+31,Accounting and Budget Department
+32,Accounting and Budget Department
+34,Accounting and Budget Department
+39,Accounting and Budget Department
+40,Accounting and Budget Department
+43,Accounting and Budget Department
+48,Accounting and Budget Department
+50,Accounting and Budget Department
+52,Accounting and Budget Department
+54,Accounting and Budget Department
+56,Accounting and Budget Department
+57,Accounting and Budget Department
+59,Accounting and Budget Department
+28,Planning Department
+29,Planning Department
+30,Planning Department
+32,Planning Department
+33,Planning Department
+34,Planning Department
+36,Planning Department
+37,Planning Department
+38,Planning Department
+39,Planning Department
+41,Planning Department
+42,Planning Department
+45,Planning Department
+46,Planning Department
+50,Planning Department
+52,Planning Department
+53,Planning Department
+55,Planning Department
+27,Research and development department
+28,Tourism Research and Development Department
+29,Tourism Research and Development Department
+31,Tourism Research and Development Department
+32,Tourism Research and Development Department
+33,Tourism Research and Development Department
+34,Tourism Research and Development Department
+36,Tourism Research and Development Department
+37,Tourism Research and Development Department
+39,Tourism Research and Development Department
+41,Tourism Research and Development Department
+44,Tourism Research and Development Department
+45,Tourism Research and Development Department
+47,Tourism Research and Development Department
+48,Tourism Research and Development Department
+49,Tourism Research and Development Department
+51,Tourism Research and Development Department
+57,Tourism Research and Development Department
+58,Tourism Research and Development Department
+59,Tourism Research and Development Department
+28,Tourism Industry Investment Promotion Department
+31,Tourism Industry Investment Promotion Department
+33,Tourism Industry Investment Promotion Department
+34,Tourism Industry Investment Promotion Department
+35,Tourism Industry Investment Promotion Department
+38,Tourism Industry Investment Promotion Department
+39,Tourism Industry Investment Promotion Department
+41,Tourism Industry Investment Promotion Department
+43,Tourism Industry Investment Promotion Department
+44,Tourism Industry Investment Promotion Department
+47,Tourism Industry Investment Promotion Department
+49,Tourism Industry Investment Promotion Department
+50,Tourism Industry Investment Promotion Department
+53,Tourism Industry Investment Promotion Department
+54,Tourism Industry Investment Promotion Department
+55,Tourism Industry Investment Promotion Department
+59,Tourism Industry Investment Promotion Department
+26,Tourism Products Department
+27,Tourism Products Department
+28,Tourism Products Department
+29,Tourism Products Department
+32,Tourism Products Department
+33,Tourism Products Department
+34,Tourism Products Department
+37,Tourism Products Department
+38,Tourism Products Department
+39,Tourism Products Department
+40,Tourism Products Department
+41,Tourism Products Department
+43,Tourism Products Department
+47,Tourism Products Department
+49,Tourism Products Department
+51,Tourism Products Department
+54,Tourism Products Department
+55,Tourism Products Department
+57,Tourism Products Department
+28,East Asia region
+29,East Asia region
+31,East Asia region
+33,East Asia region
+35,East Asia region
+37,East Asia region
+39,East Asia region
+41,East Asia region
+42,East Asia region
+43,East Asia region
+45,East Asia region
+47,East Asia region
+48,East Asia region
+49,East Asia region
+51,East Asia region
+52,East Asia region
+53,East Asia region
+54,East Asia region
+55,East Asia region
+56,East Asia region
+59,East Asia region
+28,northern region
+29,northern region
+30,northern region
+31,northern region
+32,northern region
+33,northern region
+34,northern region
+35,northern region
+36,northern region
+37,northern region
+38,northern region
+39,northern region
+40,northern region
+41,northern region
+42,northern region
+45,northern region
+46,northern region
+47,northern region
+48,northern region
+49,northern region
+50,northern region
+51,northern region
+52,northern region
+53,northern region
+54,northern region
+55,northern region
+56,northern region
+57,northern region
+58,northern region
+59,northern region
+26,southern region
+27,southern region
+28,southern region
+30,southern region
+31,southern region
+32,southern region
+33,southern region
+34,southern region
+35,southern region
+36,southern region
+37,southern region
+38,southern region
+39,southern region
+40,southern region
+41,southern region
+42,southern region
+43,southern region
+44,southern region
+45,southern region
+46,southern region
+49,southern region
+52,southern region
+53,southern region
+54,southern region
+55,southern region
+56,southern region
+57,southern region
+58,southern region
+59,southern region
+26,Central region
+28,Central region
+29,Central region
+30,Central region
+32,Central region
+33,Central region
+34,Central region
+35,Central region
+36,Central region
+37,Central region
+38,Central region
+39,Central region
+41,Central region
+42,Central region
+43,Central region
+44,Central region
+45,Central region
+46,Central region
+48,Central region
+49,Central region
+52,Central region
+53,Central region
+54,Central region
+55,Central region
+56,Central region
+57,Central region
+58,Central region
+59,Central region
+60,Central region
+27,Eastern region
+28,Eastern region
+29,Eastern region
+30,Eastern region
+31,Eastern region
+33,Eastern region
+34,Eastern region
+35,Eastern region
+36,Eastern region
+37,Eastern region
+38,Eastern region
+41,Eastern region
+42,Eastern region
+44,Eastern region
+45,Eastern region
+46,Eastern region
+47,Eastern region
+48,Eastern region
+50,Eastern region
+51,Eastern region
+52,Eastern region
+53,Eastern region
+54,Eastern region
+56,Eastern region
+57,Eastern region
+59,Eastern region
+60,Eastern region
+28,Northeastern region
+30,Northeastern region
+31,Northeastern region
+32,Northeastern region
+33,Northeastern region
+34,Northeastern region
+35,Northeastern region
+36,Northeastern region
+37,Northeastern region
+38,Northeastern region
+39,Northeastern region
+40,Northeastern region
+41,Northeastern region
+42,Northeastern region
+44,Northeastern region
+45,Northeastern region
+47,Northeastern region
+48,Northeastern region
+49,Northeastern region
+51,Northeastern region
+52,Northeastern region
+53,Northeastern region
+54,Northeastern region
+55,Northeastern region
+57,Northeastern region
+58,Northeastern region
+59,Northeastern region
+30,European region
+33,European region
+34,European region
+35,European region
+36,European region
+37,European region
+39,European region
+40,European region
+41,European region
+42,European region
+44,European region
+46,European region
+49,European region
+50,European region
+51,European region
+52,European region
+53,European region
+54,European region
+55,European region
+56,European region
+58,European region
+32,"Americas, Middle East and Africa region"
+35,"Americas, Middle East and Africa region"
+36,"Americas, Middle East and Africa region"
+38,"Americas, Middle East and Africa region"
+39,"Americas, Middle East and Africa region"
+40,"Americas, Middle East and Africa region"
+45,"Americas, Middle East and Africa region"
+47,"Americas, Middle East and Africa region"
+48,"Americas, Middle East and Africa region"
+49,"Americas, Middle East and Africa region"
+53,"Americas, Middle East and Africa region"
+54,"Americas, Middle East and Africa region"
+56,"Americas, Middle East and Africa region"
+58,"Americas, Middle East and Africa region"
+59,"Americas, Middle East and Africa region"
+31,"ASEAN, South Asia and the South Pacific region"
+33,"ASEAN, South Asia and the South Pacific region"
+34,"ASEAN, South Asia and the South Pacific region"
+35,"ASEAN, South Asia and the South Pacific region"
+36,"ASEAN, South Asia and the South Pacific region"
+38,"ASEAN, South Asia and the South Pacific region"
+39,"ASEAN, South Asia and the South Pacific region"
+41,"ASEAN, South Asia and the South Pacific region"
+42,"ASEAN, South Asia and the South Pacific region"
+45,"ASEAN, South Asia and the South Pacific region"
+46,"ASEAN, South Asia and the South Pacific region"
+47,"ASEAN, South Asia and the South Pacific region"
+49,"ASEAN, South Asia and the South Pacific region"
+50,"ASEAN, South Asia and the South Pacific region"
+51,"ASEAN, South Asia and the South Pacific region"
+53,"ASEAN, South Asia and the South Pacific region"
+54,"ASEAN, South Asia and the South Pacific region"
+55,"ASEAN, South Asia and the South Pacific region"
+56,"ASEAN, South Asia and the South Pacific region"
+60,"ASEAN, South Asia and the South Pacific region"
+56,Deputy Governor
+57,Deputy Governor
+58,Deputy Governor
+59,Deputy Governor
+60,Deputy Governor
+27,Governor's Office
+28,Governor's Office
+29,Governor's Office
+31,Governor's Office
+34,Governor's Office
+36,Governor's Office
+38,Governor's Office
+39,Governor's Office
+40,Governor's Office
+41,Governor's Office
+43,Governor's Office
+44,Governor's Office
+49,Governor's Office
+54,Governor's Office
+55,Governor's Office
+58,Governor's Office
