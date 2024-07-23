@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.30.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.19.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.26.0"></script>
+</head>
+<body>
+  <div id="vis"/>
+  <script>
+    const spec = {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/Patipat-Panyasukum/Deneb-Showcase-Chart/main/Funnel%20Chart/data_funnelchart_ghost.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {
+      "calculate": "-datum.Level_position_funnel",
+      "as": "Level_position_funnel_negative"
+    },
+    {
+      "joinaggregate": [
+        {"op": "sum", "field": "Level_position_funnel", "as": "Total"}
+      ]
+    },
+    {
+      "calculate": "(datum.Level_position_funnel / datum.Total)",
+      "as": "Percentage"
+    }
+  ],
+  "width": 1000,
+  "height": 600,
+  "title": {
+    "text": "Pyramid Chart of Level Positions",
+    "subtitle": "This is Chart Showing Significants about shape pyramid by level position Managment",
+    "fontSize": 25,
+    "font": "Supermarket",
+    "anchor": "middle",
+    "subtitlePadding": 4
+  },
+  "layer": [
+    {
+      "mark": {"type": "bar", "tooltip": true},
+      "encoding": {
+        "y": {
+          "field": "level position",
+          "type": "ordinal",
+          "sort": {"field": "Category_Sort_Order", "order": "ascending"},
+          "axis": {
+            "title": "Level position",
+            "labelAngle": 0,
+            "labelFont": "Supermarket",
+            "titleFont": "Supermarket",
+            "titleFontSize": 16,
+            "labelPadding": 10,
+            "titlePadding": 20
+          }
+        },
+        "x": {
+          "field": "Level_position_funnel_negative",
+          "type": "quantitative",
+          "axis": {
+            "title": "Count of employee",
+            "labelExpr": "datum.value < 0 ? -datum.value : ''",
+            "labelFont": "Supermarket",
+            "titleFont": "Supermarket",
+            "titleFontSize": 16
+          }
+        },
+        "color": {
+          "field": "level position",
+          "type": "nominal",
+          "legend": {"labelFont": "Supermarket"},
+          "scale": {"type": "sequential", "scheme": "magma"}
+        },
+        "tooltip": [
+          {"field": "level position", "title": "Level position"},
+          {
+            "field": "Level_position_funnel",
+            "title": "Count of employee",
+            "type": "quantitative"
+          },
+          {"field": "Percentage", "title": "Percentage", "format": ".2%"}
+        ]
+      }
+    },
+    {
+      "mark": {"type": "bar", "tooltip": true},
+      "encoding": {
+        "y": {
+          "field": "level position",
+          "type": "ordinal",
+          "sort": {"field": "Category_Sort_Order", "order": "ascending"},
+          "axis": {"title": "", "labelFont": "Supermarket", "labelFontSize": 20}
+        },
+        "x": {
+          "field": "Level_position_funnel",
+          "type": "quantitative",
+          "axis": {
+            "title": "",
+            "labelExpr": "datum.value > 0 ? datum.value : ''",
+            "labelFont": "Supermarket",
+            "labelFontSize": 12
+          }
+        },
+        "color": {
+          "field": "level position",
+          "type": "nominal",
+          "scale": {"type": "sequential", "scheme": "magma"}
+        },
+        "tooltip": [
+          {"field": "level position", "title": "Level position"},
+          {
+            "field": "Level_position_funnel",
+            "title": "Count of employee",
+            "type": "quantitative"
+          },
+          {"field": "Percentage", "title": "Percentage", "format": ".2%"}
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "middle",
+        "fontSize": 20,
+        "fontWeight": "bold",
+        "font": "Supermarket",
+        "dx": 20,
+        "color": "black"
+      },
+      "encoding": {
+        "text": {"field": "Level_position_funnel", "type": "quantitative"},
+        "y": {
+          "field": "level position",
+          "type": "ordinal",
+          "sort": {"field": "Category_Sort_Order", "order": "ascending"}
+        },
+        "x": {"field": "Level_position_funnel", "type": "quantitative"}
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "fontSize": 18,
+        "fontWeight": "bold",
+        "font": "Supermarket",
+        "color": "white",
+        "dx": 5
+      },
+      "encoding": {
+        "text": {
+          "field": "Percentage",
+          "type": "quantitative",
+          "format": ".2%",
+          "formatType": "number"
+        },
+        "y": {
+          "field": "level position",
+          "type": "ordinal",
+          "sort": {"field": "Category_Sort_Order", "order": "ascending"}
+        },
+        "x": {"field": "Level_position_funnel_negative", "type": "quantitative"}
+      }
+    }
+  ],
+  "config": {
+    "axis": {"labelAngle": 0, "labelFont": "Supermarket"},
+    "text": {"font": "Supermarket"},
+    "legend": {"labelFont": "Supermarket"}
+  }
+};
+    vegaEmbed("#vis", spec, {mode: "vega-lite"}).then(console.log).catch(console.warn);
+  </script>
+</body>
+</html>
