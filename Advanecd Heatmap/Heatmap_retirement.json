@@ -1,0 +1,142 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A heatmap showing the count of records by division and tenure categories with data labels on each bin.",
+  "title": {
+    "text": "Employees Retirement Next 5 years",
+    "subtitle": "Divided by department level and year (B.E.)",
+    "anchor": "start",
+    "font": "supermarket",
+    "fontSize": 22,
+    "subtitleFont": "supermarket",
+    "subtitleFontSize": 18,
+    "subtitlePadding": 3
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/Patipat-Panyasukum/Deneb-Showcase-Chart/main/Advanecd%20Heatmap/data_retirement_ghost.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {"calculate": "datetime(datum.Year - 543, 0, 1)", "as": "GregorianYear"},
+    {"calculate": "datum.Year", "as": "BuddhistYear"}
+  ],
+  "width": 700,
+  "height": 600,
+  "padding": {"left": 10, "right": 10, "top": 10, "bottom": 10},
+  "layer": [
+    {
+      "mark": {
+        "type": "rect",
+        "tooltip": true,
+        "stroke": "white",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "BuddhistYear",
+          "type": "ordinal",
+          "axis": {
+            "labelAngle": 0,
+            "title": "Year (B.E.)",
+            "labelFont": "supermarket",
+            "labelFontSize": 19,
+            "grid": false,
+            "labelAlign": "center"
+          }
+        },
+        "y": {
+          "field": "division",
+          "type": "nominal",
+          "sort": null,
+          "axis": {
+            "labelFont": "supermarket",
+            "labelFontSize": 17,
+            "labelPadding": 15,
+            "title": "Department",
+            "titlePadding": 20
+          }
+        },
+        "color": {
+          "field": "Employee_Retire_Next_5_year_all",
+          "type": "quantitative",
+          "legend": {
+            "title": "Count of emp Retirement",
+            "labelFont": "supermarket",
+            "labelFontSize": 18
+          },
+          "scale": {"type": "sequential", "scheme": "redblue"}
+        },
+        "tooltip": [
+          {"field": "division", "type": "nominal", "title": "Department"},
+          {
+            "field": "BuddhistYear",
+            "type": "quantitative",
+            "title": "Year (B.E.)"
+          },
+          {
+            "field": "Employee_Retire_Next_5_year_all",
+            "type": "quantitative",
+            "title": "Count of emp Retirement"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "middle",
+        "fontWeight": "bold",
+        "font": "supermarket",
+        "fontSize": 18
+      },
+      "encoding": {
+        "x": {"field": "BuddhistYear", "type": "ordinal", "bandPosition": 0.5},
+        "y": {"field": "division", "type": "nominal", "bandPosition": 0.5},
+        "text": {
+          "field": "Employee_Retire_Next_5_year_all",
+          "type": "quantitative"
+        },
+        "color": {"value": "black"}
+      }
+    },
+    {
+      "transform": [
+        {
+          "aggregate": [
+            {
+              "op": "sum",
+              "field": "Employee_Retire_Next_5_year_all",
+              "as": "TotalRetirees"
+            }
+          ],
+          "groupby": ["BuddhistYear"]
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "middle",
+        "fontWeight": "bold",
+        "fontSize": 18,
+        "color": "black",
+        "dy": -19
+      },
+      "encoding": {
+        "x": {"field": "BuddhistYear", "type": "ordinal", "bandPosition": 0.5},
+        "y": {"value": 0},
+        "text": {"field": "TotalRetirees", "type": "quantitative"},
+        "tooltip": {
+          "field": "TotalRetirees",
+          "type": "quantitative",
+          "title": "Count of emp Retirement"
+        }
+      }
+    }
+  ],
+  "config": {
+    "axis": {"titleFont": "supermarket", "titleFontSize": 18},
+    "legend": {"titleFont": "supermarket", "titleFontSize": 18},
+    "view": {"stroke": "gray"},
+    "background": "#ffffff"
+  }
+}
