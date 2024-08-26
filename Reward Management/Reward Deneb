@@ -1,0 +1,786 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A scatter plot with multiple trendlines for different job grade ranges.",
+    "title": {
+    "text": "Annual Base Salary by Job Grade Vs. Technology MKT Vs. Policy",
+    "fontSize": 16,
+    "fontWeight": "bold",
+    "anchor": "middle",
+    "dy": -10,
+    "subtitle": "Advanced Scatter Plot with Multiple Trendlines for Salary Ranges Across Job Grades in the Technology Industry and Policy Salary structure",
+    "subtitlePadding": 10
+  },
+  "data": {
+    "name": "dataset"  // Deneb automatically connects this to your dataset in Power BI
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "color": "#000000" // color for points
+      },
+      "encoding": {
+        "x": {
+          "field": "Job Grade(SSS Guide Chart)",
+          "type": "quantitative",
+          "axis": {
+            "title": "Job Grade",
+            "format": "d"  // No decimal places
+          },
+          "scale": {
+            "domainMin": 6,
+            "domainMax": 18
+          }
+        },
+        "y": {
+          "field": "AB+",
+          "type": "quantitative",
+          "axis": {
+            "title": "Annual Base Salary"
+          }
+        },
+        "tooltip": [
+      {"field": "Job Grade(SSS Guide Chart)", "type": "quantitative", "title": "Job Grade"},
+      {"field": "AB+", "type": "quantitative", "title": "Annual Base Salary"},
+      {"field": "Fullname", "type": "nominal", "title": "Fullname"},
+      {"field": "Compa Range", "type" : "nominal", "title": "Compa Ratio Categories"}
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "black",
+        "size": 1
+      },
+      "transform": [
+        {
+          "filter": "datum['Job Grade(SSS Guide Chart)'] >= 7 && datum['Job Grade(SSS Guide Chart)'] <= 9"
+        },
+        {
+          "regression": "AB+",  // Perform a linear regression on AB
+          "on": "Job Grade(SSS Guide Chart)"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "Job Grade(SSS Guide Chart)",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "AB+",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "#f05c00",
+        "size": 2
+      },
+      "transform": [
+        {
+          "filter": "datum['Job Grade(SSS Guide Chart)'] >= 7 && datum['Job Grade(SSS Guide Chart)'] <= 9"
+        },
+        {
+          "regression": "Mid (yearly)",  // Perform a linear regression on AB
+          "on": "Job Grade(SSS Guide Chart)"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "Job Grade(SSS Guide Chart)",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Mid (yearly)",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "#f05c00",
+        "size": 1,
+        "strokeDash": [5, 5]  // Dashed line pattern
+      },
+      "transform": [
+        {
+          "filter": "datum['Job Grade(SSS Guide Chart)'] >= 7 && datum['Job Grade(SSS Guide Chart)'] <= 9"
+        },
+        {
+          "regression": "Max (yearly)",  // Perform a linear regression on AB
+          "on": "Job Grade(SSS Guide Chart)"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "Job Grade(SSS Guide Chart)",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Max (yearly)",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "#f05c00",
+        "size": 1,
+        "strokeDash": [5, 5]  // Dashed line pattern
+      },
+      "transform": [
+        {
+          "filter": "datum['Job Grade(SSS Guide Chart)'] >= 7 && datum['Job Grade(SSS Guide Chart)'] <= 9"
+        },
+        {
+          "regression": "Min (yearly)",  // Perform a linear regression on AB
+          "on": "Job Grade(SSS Guide Chart)"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "Job Grade(SSS Guide Chart)",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Min (yearly)",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "black",
+        "size": 1
+      },
+      "transform": [
+        {
+          "filter": "datum['Job Grade(SSS Guide Chart)'] >= 10 && datum['Job Grade(SSS Guide Chart)'] <= 12"
+        },
+        {
+          "regression": "AB+",  // Perform a linear regression on AB
+          "on": "Job Grade(SSS Guide Chart)"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "Job Grade(SSS Guide Chart)",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "AB+",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "#f05c00",
+        "size": 2
+      },
+      "transform": [
+        {
+          "filter": "datum['Job Grade(SSS Guide Chart)'] >= 10 && datum['Job Grade(SSS Guide Chart)'] <= 12"
+        },
+        {
+          "regression": "Mid (yearly)",  // Perform a linear regression on AB
+          "on": "Job Grade(SSS Guide Chart)"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "Job Grade(SSS Guide Chart)",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Mid (yearly)",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "#f05c00",
+        "size": 1,
+        "strokeDash": [5, 5]  // Dashed line pattern
+      },
+      "transform": [
+        {
+          "filter": "datum['Job Grade(SSS Guide Chart)'] >= 10 && datum['Job Grade(SSS Guide Chart)'] <= 12"
+        },
+        {
+          "regression": "Max (yearly)",  // Perform a linear regression on AB
+          "on": "Job Grade(SSS Guide Chart)"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "Job Grade(SSS Guide Chart)",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Max (yearly)",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "#f05c00",
+        "size": 1,
+        "strokeDash": [5, 5]  // Dashed line pattern
+      },
+      "transform": [
+        {
+          "filter": "datum['Job Grade(SSS Guide Chart)'] >= 10 && datum['Job Grade(SSS Guide Chart)'] <= 12"
+        },
+        {
+          "regression": "Min (yearly)",  // Perform a linear regression on AB
+          "on": "Job Grade(SSS Guide Chart)"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "Job Grade(SSS Guide Chart)",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Min (yearly)",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "black",
+        "size": 1
+      },
+      "transform": [
+        {
+          "filter": "datum['Job Grade(SSS Guide Chart)'] >= 13 && datum['Job Grade(SSS Guide Chart)'] <= 15"
+        },
+        {
+          "regression": "AB+",  // Perform a linear regression on AB
+          "on": "Job Grade(SSS Guide Chart)"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "Job Grade(SSS Guide Chart)",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "AB+",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "#f05c00",
+        "size": 2
+      },
+      "transform": [
+        {
+          "filter": "datum['Job Grade(SSS Guide Chart)'] >= 13 && datum['Job Grade(SSS Guide Chart)'] <= 15"
+        },
+        {
+          "regression": "Mid (yearly)",  // Perform a linear regression on AB
+          "on": "Job Grade(SSS Guide Chart)"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "Job Grade(SSS Guide Chart)",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Mid (yearly)",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "#f05c00",
+        "size": 1,
+        "strokeDash": [5, 5]  // Dashed line pattern
+      },
+      "transform": [
+        {
+          "filter": "datum['Job Grade(SSS Guide Chart)'] >= 13 && datum['Job Grade(SSS Guide Chart)'] <= 15"
+        },
+        {
+          "regression": "Max (yearly)",  // Perform a linear regression on AB
+          "on": "Job Grade(SSS Guide Chart)"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "Job Grade(SSS Guide Chart)",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Max (yearly)",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "#f05c00",
+        "size": 1,
+        "strokeDash": [5, 5]  // Dashed line pattern
+      },
+      "transform": [
+        {
+          "filter": "datum['Job Grade(SSS Guide Chart)'] >= 13 && datum['Job Grade(SSS Guide Chart)'] <= 15"
+        },
+        {
+          "regression": "Min (yearly)",  // Perform a linear regression on AB
+          "on": "Job Grade(SSS Guide Chart)"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "Job Grade(SSS Guide Chart)",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Min (yearly)",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "color": "black",  // Color for the label
+        "align": "left",
+        "baseline": "middle",
+        "dx": -120,  // Adjust the position of the label
+        "dy": 70,
+        "fontSize": 12,  // Font size of the label
+        "fontWeight": "bold"  // Font weight of the label
+      },
+      "encoding": {
+        "x": {
+          "field": "Job Grade(SSS Guide Chart)",
+          "type": "quantitative",
+          "aggregate": "max",  // Position label at maximum x-value
+          "scale": {"domain": [13, 15]}  // Ensure it's within the 13-15 range
+        },
+        "y": {
+          "field": "AB+",
+          "type": "quantitative",
+          "aggregate": "max"  // Position label at maximum y-value
+        },
+        "text": {
+          "value": "Current Practice"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "black",
+        "size": 1,
+        "strokeDash": [5, 5]  // Dashed line pattern
+      },
+      "transform": [
+        {
+          "filter": "datum['Job Grade(SSS Guide Chart)'] >= 13 && datum['Job Grade(SSS Guide Chart)'] <= 15"
+        },
+        {
+          "regression": "AB+-25%",  // Perform a linear regression on AB
+          "on": "Job Grade(SSS Guide Chart)"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "Job Grade(SSS Guide Chart)",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "AB+-25%",
+          "type": "quantitative"
+        }
+      }
+    },
+      {
+      "mark": {
+        "type": "line",
+        "color": "black",
+        "size": 1,
+        "strokeDash": [5, 5]  // Dashed line pattern
+      },
+      "transform": [
+        {
+          "filter": "datum['Job Grade(SSS Guide Chart)'] >= 13 && datum['Job Grade(SSS Guide Chart)'] <= 15"
+        },
+        {
+          "regression": "AB++25%",  // Perform a linear regression on AB
+          "on": "Job Grade(SSS Guide Chart)"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "Job Grade(SSS Guide Chart)",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "AB++25%",
+          "type": "quantitative"
+        }
+      }
+    },
+      {
+      "mark": {
+        "type": "line",
+        "color": "black",
+        "size": 1,
+        "strokeDash": [5, 5]  // Dashed line pattern
+      },
+      "transform": [
+        {
+          "filter": "datum['Job Grade(SSS Guide Chart)'] >= 10 && datum['Job Grade(SSS Guide Chart)'] <= 12"
+        },
+        {
+          "regression": "AB++25%",  // Perform a linear regression on AB
+          "on": "Job Grade(SSS Guide Chart)"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "Job Grade(SSS Guide Chart)",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "AB++25%",
+          "type": "quantitative"
+        }
+      }
+    },
+      {
+      "mark": {
+        "type": "line",
+        "color": "black",
+        "size": 1,
+        "strokeDash": [5, 5]  // Dashed line pattern
+      },
+      "transform": [
+        {
+          "filter": "datum['Job Grade(SSS Guide Chart)'] >= 10 && datum['Job Grade(SSS Guide Chart)'] <= 12"
+        },
+        {
+          "regression": "AB+-25%",  // Perform a linear regression on AB
+          "on": "Job Grade(SSS Guide Chart)"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "Job Grade(SSS Guide Chart)",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "AB+-25%",
+          "type": "quantitative"
+        }
+      }
+     },
+           {
+      "mark": {
+        "type": "line",
+        "color": "black",
+        "size": 1,
+        "strokeDash": [5, 5]  // Dashed line pattern
+      },
+      "transform": [
+        {
+          "filter": "datum['Job Grade(SSS Guide Chart)'] >= 7 && datum['Job Grade(SSS Guide Chart)'] <= 9"
+        },
+        {
+          "regression": "AB++25%",  // Perform a linear regression on AB
+          "on": "Job Grade(SSS Guide Chart)"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "Job Grade(SSS Guide Chart)",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "AB++25%",
+          "type": "quantitative"
+        }
+      }
+    },
+      {
+      "mark": {
+        "type": "line",
+        "color": "black",
+        "size": 1,
+        "strokeDash": [5, 5]  // Dashed line pattern
+      },
+      "transform": [
+        {
+          "filter": "datum['Job Grade(SSS Guide Chart)'] >= 7 && datum['Job Grade(SSS Guide Chart)'] <= 9"
+        },
+        {
+          "regression": "AB+-25%",  // Perform a linear regression on AB
+          "on": "Job Grade(SSS Guide Chart)"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "Job Grade(SSS Guide Chart)",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "AB+-25%",
+          "type": "quantitative"
+        }
+      }
+     },
+      {
+      "mark": {
+        "type": "line",
+        "color": "#0e94e2",  // Smooth line color
+        "size": 1,
+        "interpolate": "monotone"  // Smooth curve
+      },
+      "encoding": {
+        "x": {
+          "field": "Job Grade(SSS Guide Chart)",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "10th",
+          "type": "quantitative"
+        }
+      }
+     },
+      {
+      "mark": {
+        "type": "text",
+        "color": "#0e94e2",  // Color for the label
+        "align": "left",
+        "baseline": "middle",
+        "dx": 10,  // Adjust the position of the label
+        "fontSize": 12,  // Font size of the label
+        "fontWeight": "bold"  // Font weight of the label
+      },
+      "encoding": {
+        "x": {
+          "field": "Job Grade(SSS Guide Chart)",
+          "type": "quantitative",
+          "aggregate": "max"  // Position label at maximum x-value
+        },
+        "y": {
+          "field": "10th",
+          "type": "quantitative",
+          "aggregate": "max"  // Position label at maximum y-value
+        },
+        "text": {
+          "value": "P10"
+        }
+      }
+    },
+      {
+      "mark": {
+        "type": "line",
+        "color": "#07d422",  // Smooth line color
+        "size": 1,
+        "interpolate": "monotone"  // Smooth curve
+      },
+      "encoding": {
+        "x": {
+          "field": "Job Grade(SSS Guide Chart)",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "25th",
+          "type": "quantitative"
+        }
+      }
+     },
+      {
+      "mark": {
+        "type": "text",
+        "color": "#07d422",  // Color for the label
+        "align": "left",
+        "baseline": "middle",
+        "dx": 10,  // Adjust the position of the label
+        "fontSize": 12,  // Font size of the label
+        "fontWeight": "bold"  // Font weight of the label
+      },
+      "encoding": {
+        "x": {
+          "field": "Job Grade(SSS Guide Chart)",
+          "type": "quantitative",
+          "aggregate": "max"  // Position label at maximum x-value
+        },
+        "y": {
+          "field": "25th",
+          "type": "quantitative",
+          "aggregate": "max"  // Position label at maximum y-value
+        },
+        "text": {
+          "value": "P25"
+        }
+      }
+    },
+      {
+      "mark": {
+        "type": "line",
+        "color": "#eafa06",  // Smooth line color
+        "size": 1,
+        "interpolate": "monotone"  // Smooth curve
+      },
+      "encoding": {
+        "x": {
+          "field": "Job Grade(SSS Guide Chart)",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "50th",
+          "type": "quantitative"
+        }
+      }
+     },
+      {
+      "mark": {
+        "type": "text",
+        "color": "#cc9809",  // Color for the label
+        "align": "left",
+        "baseline": "middle",
+        "dx": 10,  // Adjust the position of the label
+        "fontSize": 12,  // Font size of the label
+        "fontWeight": "bold"  // Font weight of the label
+      },
+      "encoding": {
+        "x": {
+          "field": "Job Grade(SSS Guide Chart)",
+          "type": "quantitative",
+          "aggregate": "max"  // Position label at maximum x-value
+        },
+        "y": {
+          "field": "50th",
+          "type": "quantitative",
+          "aggregate": "max"  // Position label at maximum y-value
+        },
+        "text": {
+          "value": "P50"
+        }
+      }
+    },
+      {
+      "mark": {
+        "type": "line",
+        "color": "#f00303",  // Smooth line color
+        "size": 1,
+        "interpolate": "monotone"  // Smooth curve
+      },
+      "encoding": {
+        "x": {
+          "field": "Job Grade(SSS Guide Chart)",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "75th",
+          "type": "quantitative"
+        }
+      }
+     },
+      {
+      "mark": {
+        "type": "text",
+        "color": "#f00303",  // Color for the label
+        "align": "left",
+        "baseline": "middle",
+        "dx": 10,  // Adjust the position of the label
+        "fontSize": 12,  // Font size of the label
+        "fontWeight": "bold"  // Font weight of the label
+      },
+      "encoding": {
+        "x": {
+          "field": "Job Grade(SSS Guide Chart)",
+          "type": "quantitative",
+          "aggregate": "max"  // Position label at maximum x-value
+        },
+        "y": {
+          "field": "75th",
+          "type": "quantitative",
+          "aggregate": "max"  // Position label at maximum y-value
+        },
+        "text": {
+          "value": "P75"
+        }
+      }
+    },
+      {
+      "mark": {
+        "type": "line",
+        "color": "#ff0beb",  // Smooth line color
+        "size": 1,
+        "interpolate": "monotone"  // Smooth curve
+      },
+      "encoding": {
+        "x": {
+          "field": "Job Grade(SSS Guide Chart)",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "90th",
+          "type": "quantitative"
+        }
+      }
+     },
+      {
+      "mark": {
+        "type": "text",
+        "color": "#ff0beb",  // Color for the label
+        "align": "left",
+        "baseline": "middle",
+        "dx": 10,  // Adjust the position of the label
+        "fontSize": 12,  // Font size of the label
+        "fontWeight": "bold"  // Font weight of the label
+      },
+      "encoding": {
+        "x": {
+          "field": "Job Grade(SSS Guide Chart)",
+          "type": "quantitative",
+          "aggregate": "max"  // Position label at maximum x-value
+        },
+        "y": {
+          "field": "90th",
+          "type": "quantitative",
+          "aggregate": "max"  // Position label at maximum y-value
+        },
+        "text": {
+          "value": "P90"
+        }
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 14
+    }
+  }
+}
