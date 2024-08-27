@@ -1,0 +1,138 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A minimal scatterplot showing average score versus prioritize factor with zones indicated by segments.",
+  "title": {
+    "text": "Segment Employees",
+    "subtitle": "Average Score vs. Prioritize Factor",
+    "fontSize": 20,
+    "subtitleFontSize": 16,
+    "anchor": "start",
+    "color": "#333"
+  },
+  "data": {
+    "name": "dataset"
+  },
+  "transform": [
+    {
+      "calculate": "datum.avg_score > 2.75 && datum.Pioritize_factor > 15 ? 'Ongoing Promotion Zone' : datum.avg_score > 2.75 && datum.Pioritize_factor <= 15 ? 'Keep onGoing Zone' : datum.avg_score <= 2.75 && datum.Pioritize_factor > 15 ? 'Critical Development Zone' : 'Have Develop Zone'",
+      "as": "Segment"
+    }
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 100,
+        "opacity": 0.6
+      },
+      "encoding": {
+        "x": {
+          "field": "avg_score",
+          "type": "quantitative",
+          "title": "Average Score",
+          "scale": {
+            "domain": [2, 4],
+            "zero": false
+          },
+          "axis": {
+            "format": ".1f",
+            "labelFontSize": 12,
+            "titleFontSize": 14
+          }
+        },
+        "y": {
+          "field": "Pioritize_factor",
+          "type": "quantitative",
+          "title": "Prioritize Factor",
+          "scale": {
+            "domain": [0, 30]
+          },
+          "axis": {
+            "labelFontSize": 12,
+            "titleFontSize": 14
+          }
+        },
+        "color": {
+          "field": "Segment",
+          "type": "nominal",
+          "title": "Segment",
+          "legend": {
+            "labelFontSize": 12,
+            "titleFontSize": 14,
+            "symbolSize": 100
+          },
+          "scale": {
+            "range": ["#66c2a5", "#fc8d62", "#8da0cb", "#e78ac3"]
+          }
+        },
+        "tooltip": [
+          {"field": "avg_score", "type": "quantitative", "title": "Average Score"},
+          {"field": "Pioritize_factor", "type": "quantitative", "title": "Prioritize Factor"},
+          {"field": "Segment", "type": "nominal", "title": "Segment"},
+          {"field": "Attribute", "type": "nominal",
+          "title" : "Factor"}
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#333",
+        "strokeWidth": 1.5,
+        "strokeDash": [4, 4],
+        "opacity": 0.1
+      },
+      "encoding": {
+        "x": {
+          "datum": 2.75
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#000000",
+        "strokeWidth": 1.5,
+        "strokeDash": [4, 4],
+        "opacity": 0.1
+      },
+      "encoding": {
+        "y": {
+          "datum": 15
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "dy": -15,  // Adjust this value to move labels up or down
+        "fontSize": 10,
+        "color": "#333"
+      },
+      "encoding": {
+        "x": {
+          "field": "avg_score",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Pioritize_factor",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "Attribute",
+          "type": "nominal"
+        }
+      }
+    }
+  ],
+  "config": {
+    "background": "#ffffff",
+    "axis": {
+      "grid": false
+    },
+    "legend": {
+      "orient": "bottom-right"
+    }
+  }
+}
