@@ -1,0 +1,258 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A minimal scatterplot showing average score versus prioritize factor with zones indicated by segments.",
+  "title": {
+    "text": "Segment Employees",
+    "subtitle": "Average Score vs. Prioritize Factor",
+    "fontSize": 20,
+    "subtitleFontSize": 16,
+    "anchor": "start",
+    "color": "#333"
+  },
+  "data": {
+    "name": "dataset"
+  },
+  "transform": [
+    {
+      "calculate": "datum.avg_score_factor > 2.75 && datum.Percentile_Prioritize_Factor > 0.5 ? 'Ongoing Promotion Zone' : datum.avg_score_factor > 2.75 && datum.Percentile_Prioritize_Factor <= 0.5 ? 'Keep on Going Zone' : datum.avg_score_factor <= 2.75 && datum.Percentile_Prioritize_Factor > 0.5 ? 'Critical Development Zone' : 'Have Develop Zone'",
+      "as": "Segment"
+    }
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "rect",
+        "fill": "#ffdddd",  // Light red background for the Critical Development Zone
+        "opacity": 0.5
+      },
+      "encoding": {
+        "x": {
+          "datum": 2,
+          "type": "quantitative"
+        },
+        "x2": {
+          "datum": 2.75,
+          "type": "quantitative"
+        },
+        "y": {
+          "datum": 0.5,
+          "type": "quantitative"
+        },
+        "y2": {
+          "datum": 1,
+          "type": "quantitative"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.avg_score_factor >= 2.75 && datum.Percentile_Prioritize_Factor > 0.5"
+        }
+      ]
+    },
+    {
+      "mark": {
+        "type": "rect",
+        "fill": "#f6dbc8",  // Light red background for the Critical Development Zone
+        "opacity": 0.3
+      },
+      "encoding": {
+        "x": {
+          "datum": 2,
+          "type": "quantitative"
+        },
+        "x2": {
+          "datum": 2.75,
+          "type": "quantitative"
+        },
+        "y": {
+          "datum": 0,
+          "type": "quantitative"
+        },
+        "y2": {
+          "datum": 0.5,
+          "type": "quantitative"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.avg_score_factor >= 2.75 && datum.Percentile_Prioritize_Factor > 0.5"
+        }
+      ]
+    },
+    {
+      "mark": {
+        "type": "rect",
+        "fill": "#b9eba5",  // Light red background for the Critical Development Zone
+        "opacity": 0.3
+      },
+      "encoding": {
+        "x": {
+          "datum": 2.75,
+          "type": "quantitative"
+        },
+        "x2": {
+          "datum": 4,
+          "type": "quantitative"
+        },
+        "y": {
+          "datum": 0.5,
+          "type": "quantitative"
+        },
+        "y2": {
+          "datum": 1,
+          "type": "quantitative"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.avg_score_factor <= 2.75 && datum.Percentile_Prioritize_Factor > 0.5"
+        }
+      ]
+    },
+    {
+      "mark": {
+        "type": "rect",
+        "fill": "#f3faae",  // Light red background for the Critical Development Zone
+        "opacity": 0.5
+      },
+      "encoding": {
+        "x": {
+          "datum": 2.75,
+          "type": "quantitative"
+        },
+        "x2": {
+          "datum": 4,
+          "type": "quantitative"
+        },
+        "y": {
+          "datum": 0,
+          "type": "quantitative"
+        },
+        "y2": {
+          "datum": 0.5,
+          "type": "quantitative"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.avg_score_factor >= 2.75 && datum.Percentile_Prioritize_Factor > 0.5"
+        }
+      ]
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 130,
+        "opacity": 0.6
+      },
+      "encoding": {
+        "x": {
+          "field": "avg_score_factor",
+          "type": "quantitative",
+          "title": "Average Score",
+          "scale": {
+            "domain": [2, 4],
+            "zero": false
+          },
+          "axis": {
+            "format": ".1f",
+            "labelFontSize": 12,
+            "titleFontSize": 14
+          }
+        },
+        "y": {
+          "field": "Percentile_Prioritize_Factor",
+          "type": "quantitative",
+          "title": "Prioritize Factor",
+          "scale": {
+            "domain": [0, 1]
+          },
+          "axis": {
+            "labelFontSize": 12,
+            "titleFontSize": 14
+          }
+        },
+        "color": {
+          "field": "Segment",
+          "type": "nominal",
+          "title": "Segment",
+          "legend": {
+            "labelFontSize": 12,
+            "titleFontSize": 14,
+            "symbolSize": 130
+          },
+          "scale": {
+            "range": ["#e78ac3", "#fc8d62", "#ffd92f", "#66c2a5"]
+          }
+        },
+        "tooltip": [
+          {"field": "avg_score_factor", "type": "quantitative", "title": "Average Score"},
+          {"field": "Percentile_Prioritize_Factor", "type": "quantitative", "title": "Prioritize Factor"},
+          {"field": "Segment", "type": "nominal", "title": "Segment"},
+          {"field": "Factor", "type": "nominal", "title": "Factor"},
+          {"field": "Pioritize_factor_", "type": "quantitative", "title": "Significants rate"}
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#000000",
+        "strokeWidth": 1.5,
+        "strokeDash": [4, 4],
+        "opacity": 0.3
+      },
+      "encoding": {
+        "x": {
+          "datum": 2.75
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#000000",
+        "strokeWidth": 1.5,
+        "strokeDash": [4, 4],
+        "opacity": 0.3
+      },
+      "encoding": {
+        "y": {
+          "datum": 0.5
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "dy": -13,
+        "fontSize": 10,
+        "color": "#000000"
+      },
+      "encoding": {
+        "x": {
+          "field": "avg_score_factor",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Percentile_Prioritize_Factor",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "Factor",
+          "type": "nominal"
+        }
+      }
+    }
+  ],
+  "config": {
+    "background": "#ffffff",
+    "axis": {
+      "grid": false
+    },
+    "legend": {
+      "orient": "bottom-right"
+    }
+  }
+}
