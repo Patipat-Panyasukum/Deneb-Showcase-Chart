@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "A minimal scatterplot showing average score versus prioritize factor with zones indicated by segments.",
+  "description": "A scatterplot showing average score versus prioritize factor with zones indicated by segments.",
   "title": {
     "text": "Segment Employees",
     "subtitle": "Average Score vs. Prioritize Factor",
@@ -22,8 +22,10 @@
     {
       "mark": {
         "type": "rect",
-        "fill": "#ffdddd",  // Light red background for the Critical Development Zone
-        "opacity": 0.5
+        "fill": "#fecae9",  // Critical Development Zone
+        "opacity": 0.3,
+        "stroke": "#ef092c",
+        "strokeWidth": 1
       },
       "encoding": {
         "x": {
@@ -45,15 +47,17 @@
       },
       "transform": [
         {
-          "filter": "datum.avg_score_factor >= 2.75 && datum.Percentile_Prioritize_Factor > 0.5"
+          "filter": "datum.avg_score_factor > 2.75 && datum.Percentile_Prioritize_Factor > 0.5"
         }
       ]
     },
     {
       "mark": {
         "type": "rect",
-        "fill": "#f6dbc8",  // Light red background for the Critical Development Zone
-        "opacity": 0.3
+        "fill": "#f0f5a2",  // Have develop Zone
+        "opacity": 0.3,
+        "stroke": "#fdb500",
+        "strokeWidth": 1
       },
       "encoding": {
         "x": {
@@ -75,15 +79,17 @@
       },
       "transform": [
         {
-          "filter": "datum.avg_score_factor >= 2.75 && datum.Percentile_Prioritize_Factor > 0.5"
+          "filter": "datum.avg_score_factor > 2.75 && datum.Percentile_Prioritize_Factor <= 0.5"
         }
       ]
     },
     {
       "mark": {
         "type": "rect",
-        "fill": "#b9eba5",  // Light red background for the Critical Development Zone
-        "opacity": 0.3
+        "fill": "#a6f7a4",  // Light red for Critical Development Zone
+        "opacity": 0.3,
+        "stroke": "#1eb8ff",
+        "strokeWidth": 1
       },
       "encoding": {
         "x": {
@@ -112,8 +118,10 @@
     {
       "mark": {
         "type": "rect",
-        "fill": "#f3faae",  // Light red background for the Critical Development Zone
-        "opacity": 0.5
+        "fill": "#aae2f3",  // keep ongoing zone
+        "opacity": 0.3,
+        "stroke": "#f00be8",
+        "strokeWidth": 1
       },
       "encoding": {
         "x": {
@@ -135,7 +143,7 @@
       },
       "transform": [
         {
-          "filter": "datum.avg_score_factor >= 2.75 && datum.Percentile_Prioritize_Factor > 0.5"
+          "filter": "datum.avg_score_factor <= 2.75 && datum.Percentile_Prioritize_Factor <= 0.5"
         }
       ]
     },
@@ -143,8 +151,8 @@
       "mark": {
         "type": "point",
         "filled": true,
-        "size": 130,
-        "opacity": 0.6
+        "size": 100,
+        "opacity": 0.7
       },
       "encoding": {
         "x": {
@@ -158,7 +166,8 @@
           "axis": {
             "format": ".1f",
             "labelFontSize": 12,
-            "titleFontSize": 14
+            "titleFontSize": 14,
+            "tickColor": "#666"
           }
         },
         "y": {
@@ -170,7 +179,8 @@
           },
           "axis": {
             "labelFontSize": 12,
-            "titleFontSize": 14
+            "titleFontSize": 14,
+            "tickColor": "#666"
           }
         },
         "color": {
@@ -180,10 +190,10 @@
           "legend": {
             "labelFontSize": 12,
             "titleFontSize": 14,
-            "symbolSize": 130
+            "symbolSize": 100
           },
           "scale": {
-            "range": ["#e78ac3", "#fc8d62", "#ffd92f", "#66c2a5"]
+            "range": ["#e41a1c", "#ffcc99", "#1eb8ff", "#4daf4a"]
           }
         },
         "tooltip": [
@@ -191,7 +201,7 @@
           {"field": "Percentile_Prioritize_Factor", "type": "quantitative", "title": "Prioritize Factor"},
           {"field": "Segment", "type": "nominal", "title": "Segment"},
           {"field": "Factor", "type": "nominal", "title": "Factor"},
-          {"field": "Pioritize_factor_", "type": "quantitative", "title": "Significants rate"}
+          {"field": "Pioritize_factor_", "type": "quantitative", "title": "Significant Rate"}
         ]
       }
     },
@@ -201,7 +211,7 @@
         "color": "#000000",
         "strokeWidth": 1.5,
         "strokeDash": [4, 4],
-        "opacity": 0.3
+        "opacity": 0.5
       },
       "encoding": {
         "x": {
@@ -215,7 +225,7 @@
         "color": "#000000",
         "strokeWidth": 1.5,
         "strokeDash": [4, 4],
-        "opacity": 0.3
+        "opacity": 0.5
       },
       "encoding": {
         "y": {
@@ -226,9 +236,9 @@
     {
       "mark": {
         "type": "text",
-        "dy": -13,
-        "fontSize": 10,
-        "color": "#000000"
+        "dy": -10,
+        "fontSize": 12,
+        "color": "#333"
       },
       "encoding": {
         "x": {
@@ -249,10 +259,14 @@
   "config": {
     "background": "#ffffff",
     "axis": {
-      "grid": false
+      "grid": true,
+      "gridColor": "#e0e0e0",
+      "gridOpacity": 0.5
     },
     "legend": {
-      "orient": "bottom-right"
+      "orient": "bottom-right",
+      "titleFontSize": 14,
+      "labelFontSize": 12
     }
   }
 }
