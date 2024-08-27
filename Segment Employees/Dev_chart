@@ -22,7 +22,169 @@
     {
       "mark": {
         "type": "rect",
-        "fill": "#fecae9",  // Critical Development Zone
+        "fill": "#ed0b93",  // Critical Development Zone 4
+        "opacity": 0.3,
+        "stroke": "#ef092c",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "x": {
+          "datum": 2,
+          "type": "quantitative"
+        },
+        "x2": {
+          "datum": 2.75,
+          "type": "quantitative"
+        },
+        "y": {
+          "datum": 0.95,
+          "type": "quantitative"
+        },
+        "y2": {
+          "datum": 1,
+          "type": "quantitative"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.avg_score_factor > 2.75 && datum.Percentile_Prioritize_Factor > 0.5"
+        }
+      ]
+    },
+    {
+      "mark": { // add label layer
+        "type": "text",
+        "color": "#f9f9f9",
+        "fontSize": 12,
+        "align": "right",
+        "baseline": "middle"
+      },
+      "encoding": {
+        "x": {
+          "datum": 2.375,
+          "type": "quantitative"
+        },
+        "y": {
+          "datum": 0.975,
+          "type": "quantitative"
+        },
+        "text": {
+          "value": "Critical Development Zone 4"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "rect",
+        "fill": "#f163b8",  // Critical Development Zone 3
+        "opacity": 0.3,
+        "stroke": "#ef092c",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "x": {
+          "datum": 2,
+          "type": "quantitative"
+        },
+        "x2": {
+          "datum": 2.75,
+          "type": "quantitative"
+        },
+        "y": {
+          "datum": 0.80,
+          "type": "quantitative"
+        },
+        "y2": {
+          "datum": 0.95,
+          "type": "quantitative"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.avg_score_factor > 2.75 && datum.Percentile_Prioritize_Factor > 0.5"
+        }
+      ]
+    },
+    {
+      "mark": { // add label layer
+        "type": "text",
+        "color": "#f9f9f9",
+        "fontSize": 12,
+        "align": "right",
+        "baseline": "middle"
+      },
+      "encoding": {
+        "x": {
+          "datum": 2.375,
+          "type": "quantitative"
+        },
+        "y": {
+          "datum": 0.875,
+          "type": "quantitative"
+        },
+        "text": {
+          "value": "Critical Development Zone 3"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "rect",
+        "fill": "#ef83c4",  // Critical Development Zone 2
+        "opacity": 0.3,
+        "stroke": "#ef092c",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "x": {
+          "datum": 2,
+          "type": "quantitative"
+        },
+        "x2": {
+          "datum": 2.75,
+          "type": "quantitative"
+        },
+        "y": {
+          "datum": 0.65,
+          "type": "quantitative"
+        },
+        "y2": {
+          "datum": 0.80,
+          "type": "quantitative"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.avg_score_factor > 2.75 && datum.Percentile_Prioritize_Factor > 0.5"
+        }
+      ]
+    },
+    {
+      "mark": { // add label layer
+        "type": "text",
+        "color": "#f9f9f9",
+        "fontSize": 12,
+        "align": "right",
+        "baseline": "middle"
+      },
+      "encoding": {
+        "x": {
+          "datum": 2.375,
+          "type": "quantitative"
+        },
+        "y": {
+          "datum": 0.72,
+          "type": "quantitative"
+        },
+        "text": {
+          "value": "Critical Development Zone 2"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "rect",
+        "fill": "#fecae9",  // Critical Development Zone 1
         "opacity": 0.3,
         "stroke": "#ef092c",
         "strokeWidth": 1
@@ -41,7 +203,7 @@
           "type": "quantitative"
         },
         "y2": {
-          "datum": 1,
+          "datum": 0.65,
           "type": "quantitative"
         }
       },
@@ -50,6 +212,28 @@
           "filter": "datum.avg_score_factor > 2.75 && datum.Percentile_Prioritize_Factor > 0.5"
         }
       ]
+    },
+    {
+      "mark": { // add label layer
+        "type": "text",
+        "color": "#fcfcfc",
+        "fontSize": 12,
+        "align": "right",
+        "baseline": "middle"
+      },
+      "encoding": {
+        "x": {
+          "datum": 2.375,
+          "type": "quantitative"
+        },
+        "y": {
+          "datum": 0.595,
+          "type": "quantitative"
+        },
+        "text": {
+          "value": "Critical Development Zone 1"
+        }
+      }
     },
     {
       "mark": {
@@ -236,7 +420,7 @@
     {
       "mark": {
         "type": "text",
-        "dy": -10,
+        "dy": -14,
         "fontSize": 12,
         "color": "#333"
       },
