@@ -25,14 +25,14 @@
     {
       "mark": {
         "type": "rect",
-        "fill": "#ed0b93",  // Critical Development Zone 4
+        "fill": "#ec38a4",  // Critical Development Zone 4
         "opacity": 0.3,
         "stroke": "#ef092c",
         "strokeWidth": 1
       },
       "encoding": {
         "x": {
-          "datum": 2,
+          "datum": 1,
           "type": "quantitative"
         },
         "x2": {
@@ -65,7 +65,7 @@
       },
       "encoding": {
         "x": {
-          "datum": 2.375,
+          "datum": 1.5,
           "type": "quantitative"
         },
         "y": {
@@ -87,7 +87,7 @@
       },
       "encoding": {
         "x": {
-          "datum": 2,
+          "datum": 1,
           "type": "quantitative"
         },
         "x2": {
@@ -120,7 +120,7 @@
       },
       "encoding": {
         "x": {
-          "datum": 2.375,
+          "datum": 1.5,
           "type": "quantitative"
         },
         "y": {
@@ -142,7 +142,7 @@
       },
       "encoding": {
         "x": {
-          "datum": 2,
+          "datum": 1,
           "type": "quantitative"
         },
         "x2": {
@@ -175,7 +175,7 @@
       },
       "encoding": {
         "x": {
-          "datum": 2.375,
+          "datum": 1.5,
           "type": "quantitative"
         },
         "y": {
@@ -197,7 +197,7 @@
       },
       "encoding": {
         "x": {
-          "datum": 2,
+          "datum": 1,
           "type": "quantitative"
         },
         "x2": {
@@ -230,7 +230,7 @@
       },
       "encoding": {
         "x": {
-          "datum": 2.375,
+          "datum": 1.5,
           "type": "quantitative"
         },
         "y": {
@@ -252,7 +252,7 @@
       },
       "encoding": {
         "x": {
-          "datum": 2,
+          "datum": 1,
           "type": "quantitative"
         },
         "x2": {
@@ -351,7 +351,7 @@
           "type": "quantitative",
           "title": "Average Score",
           "scale": {
-            "domain": [2, 4],
+            "domain": [1, 4],
             "zero": false
           },
           "axis": {
@@ -386,7 +386,7 @@
             "symbolSize": 100
           },
           "scale": {
-            "range": ["#e41a1c", "#ffcc99", "#1eb8ff", "#4daf4a"]
+            "range": ["#e41a1c", "#ff9800", "#1eb8ff", "#4daf4a"]
           }
         },
         "tooltip": [
