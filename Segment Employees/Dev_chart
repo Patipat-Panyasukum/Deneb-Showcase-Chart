@@ -3,11 +3,14 @@
   "description": "A scatterplot showing average score versus prioritize factor with zones indicated by segments.",
   "title": {
     "text": "Segment Employees",
-    "subtitle": "Average Score vs. Prioritize Factor",
+    "subtitle": "Segment Employees: This visualization categorizes employees into distinct segments based on their average score and prioritize factor",
+    "dy": -10,
+    "subtitleFont": "Supermarket",
     "fontSize": 20,
     "subtitleFontSize": 16,
     "anchor": "start",
-    "color": "#333"
+    "color": "#333",
+    "font": "Supermarket"
   },
   "data": {
     "name": "dataset"
@@ -55,9 +58,10 @@
       "mark": { // add label layer
         "type": "text",
         "color": "#f9f9f9",
-        "fontSize": 12,
+        "fontSize": 14,
         "align": "right",
-        "baseline": "middle"
+        "baseline": "middle",
+        "font": "Supermarket"
       },
       "encoding": {
         "x": {
@@ -109,9 +113,10 @@
       "mark": { // add label layer
         "type": "text",
         "color": "#f9f9f9",
-        "fontSize": 12,
+        "fontSize": 14,
         "align": "right",
-        "baseline": "middle"
+        "baseline": "middle",
+        "font": "Supermarket"
       },
       "encoding": {
         "x": {
@@ -163,9 +168,10 @@
       "mark": { // add label layer
         "type": "text",
         "color": "#f9f9f9",
-        "fontSize": 12,
+        "fontSize": 14,
         "align": "right",
-        "baseline": "middle"
+        "baseline": "middle",
+        "font": "Supermarket"
       },
       "encoding": {
         "x": {
@@ -217,9 +223,10 @@
       "mark": { // add label layer
         "type": "text",
         "color": "#fcfcfc",
-        "fontSize": 12,
+        "fontSize": 14,
         "align": "right",
-        "baseline": "middle"
+        "baseline": "middle",
+        "font": "Supermarket"
       },
       "encoding": {
         "x": {
@@ -272,7 +279,7 @@
         "type": "rect",
         "fill": "#a6f7a4",  // Light red for Critical Development Zone
         "opacity": 0.3,
-        "stroke": "#1eb8ff",
+        "stroke": "#41bd0f",
         "strokeWidth": 1
       },
       "encoding": {
@@ -304,7 +311,7 @@
         "type": "rect",
         "fill": "#aae2f3",  // keep ongoing zone
         "opacity": 0.3,
-        "stroke": "#f00be8",
+        "stroke": "#4b25f7",
         "strokeWidth": 1
       },
       "encoding": {
@@ -350,8 +357,9 @@
           "axis": {
             "format": ".1f",
             "labelFontSize": 12,
-            "titleFontSize": 14,
-            "tickColor": "#666"
+            "titleFontSize": 16,
+            "tickColor": "#666",
+            "titleFont": "Supermarket"
           }
         },
         "y": {
@@ -363,8 +371,9 @@
           },
           "axis": {
             "labelFontSize": 12,
-            "titleFontSize": 14,
-            "tickColor": "#666"
+            "titleFontSize": 16,
+            "tickColor": "#666",
+            "titleFont" : "Supermarket"
           }
         },
         "color": {
@@ -395,7 +404,8 @@
         "color": "#000000",
         "strokeWidth": 1.5,
         "strokeDash": [4, 4],
-        "opacity": 0.5
+        "opacity": 0.5,
+        "font": "Supermarket"
       },
       "encoding": {
         "x": {
@@ -409,7 +419,8 @@
         "color": "#000000",
         "strokeWidth": 1.5,
         "strokeDash": [4, 4],
-        "opacity": 0.5
+        "opacity": 0.5,
+        "font": "Supermarket"
       },
       "encoding": {
         "y": {
@@ -421,8 +432,9 @@
       "mark": {
         "type": "text",
         "dy": -14,
-        "fontSize": 12,
-        "color": "#333"
+        "fontSize": 14,
+        "color": "#333",
+        "font": "Supermarket"
       },
       "encoding": {
         "x": {
@@ -449,8 +461,9 @@
     },
     "legend": {
       "orient": "bottom-right",
-      "titleFontSize": 14,
-      "labelFontSize": 12
+      "titleFontSize": 16,
+      "labelFontSize": 14,
+      "labelFont": "Supermarket"
     }
   }
 }
