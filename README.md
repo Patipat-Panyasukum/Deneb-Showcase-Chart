@@ -4,6 +4,16 @@ This is a collection of advanced dataviz examples using Vega, Vega-Lite, Deneb a
 and Advanced Customization Deneb provides a high degree of control over the appearance and behavior of your visualizations, enabling you to customize everything from colors and shapes to axes and legends. also you can
 Integration with Power BI
 
+
+ ## Correlation Matrix with Dashboard
+ 
+![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/Correlation/Correlation%20Matrix.png?raw=true)
+
+
+ ## Reward Management Chart
+ 
+![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/Reward%20Management/Reward%20Management%20with%20Dashboard.png?raw=true)
+
  
  ## Beeswarm Competency by Job Family and IDP Group
  
