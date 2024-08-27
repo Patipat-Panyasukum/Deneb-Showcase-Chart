@@ -1,0 +1,121 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "values": [
+      {"variable1": "ManagerRating", "variable2": "ManagerRating", "correlation": 1.000000},
+      {"variable1": "ManagerRating", "variable2": "TrainingOpportunitiesTaken", "correlation": 0.431064},
+      {"variable1": "ManagerRating", "variable2": "YearsAtCompany", "correlation": 0.444710},
+      {"variable1": "ManagerRating", "variable2": "Age", "correlation": 0.185078},
+      {"variable1": "ManagerRating", "variable2": "Salary", "correlation": 0.70738},
+      {"variable1": "ManagerRating", "variable2": "Attrition", "correlation": 0.151547},
+      {"variable1": "ManagerRating", "variable2": "JG", "correlation": 0.017512},
+      {"variable1": "ManagerRating", "variable2": "Distance From Home", "correlation": 0.017512},
+      {"variable1": "TrainingOpportunitiesTaken", "variable2": "ManagerRating", "correlation": 0.431064},
+      {"variable1": "TrainingOpportunitiesTaken", "variable2": "TrainingOpportunitiesTaken", "correlation": 1.000000},
+      {"variable1": "TrainingOpportunitiesTaken", "variable2": "YearsAtCompany", "correlation": 0.811729},
+      {"variable1": "TrainingOpportunitiesTaken", "variable2": "Age", "correlation": 0.466957},
+      {"variable1": "TrainingOpportunitiesTaken", "variable2": "Salary", "correlation": -0.011776},
+      {"variable1": "TrainingOpportunitiesTaken", "variable2": "Attrition", "correlation": 0.557626},
+      {"variable1": "TrainingOpportunitiesTaken", "variable2": "JG", "correlation": 0.007325},
+      {"variable1": "TrainingOpportunitiesTaken", "variable2": "Distance From Home", "correlation": 0.007325},
+      {"variable1": "YearsAtCompany", "variable2": "ManagerRating", "correlation": 0.444710},
+      {"variable1": "YearsAtCompany", "variable2": "TrainingOpportunitiesTaken", "correlation": 0.811729},
+      {"variable1": "YearsAtCompany", "variable2": "YearsAtCompany", "correlation": 1.000000},
+      {"variable1": "YearsAtCompany", "variable2": "Age", "correlation": 0.568640},
+      {"variable1": "YearsAtCompany", "variable2": "Salary", "correlation": 0.85678},
+      {"variable1": "YearsAtCompany", "variable2": "Attrition", "correlation": -0.290487},
+      {"variable1": "YearsAtCompany", "variable2": "JG", "correlation": 0.206859},
+      {"variable1": "YearsAtCompany", "variable2":"Distance From Home", "correlation": 0.106859},
+      {"variable1": "Age", "variable2": "ManagerRating", "correlation": 0.185078},
+      {"variable1": "Age", "variable2": "TrainingOpportunitiesTaken", "correlation": 0.466957},
+      {"variable1": "Age", "variable2": "YearsAtCompany", "correlation": 0.568640},
+      {"variable1": "Age", "variable2": "Age", "correlation": 1.000000},
+      {"variable1": "Age", "variable2": "Salary", "correlation": 0.700628},
+      {"variable1": "Age", "variable2": "Attrition", "correlation": -0.140481},
+      {"variable1": "Age", "variable2": "JG", "correlation": 0.534104},
+      {"variable1": "Age", "variable2": "Distance From Home", "correlation": 0.234104},
+      {"variable1": "Salary", "variable2": "ManagerRating", "correlation": 0.70738},
+      {"variable1": "Salary", "variable2": "TrainingOpportunitiesTaken", "correlation": -0.011776},
+      {"variable1": "Salary", "variable2": "YearsAtCompany", "correlation": 0.85678},
+      {"variable1": "Salary", "variable2": "Age", "correlation": 0.700628},
+      {"variable1": "Salary", "variable2": "Salary", "correlation": 1.000000},
+      {"variable1": "Salary", "variable2": "Attrition", "correlation": -0.139158},
+      {"variable1": "Salary", "variable2": "JG", "correlation": 0.919764},
+       {"variable1": "Salary", "variable2": "Distance From Home", "correlation": 0.019764},
+      {"variable1": "Attrition", "variable2": "ManagerRating", "correlation": 0.151547},
+      {"variable1": "Attrition", "variable2": "TrainingOpportunitiesTaken", "correlation": 0.557626},
+      {"variable1": "Attrition", "variable2": "YearsAtCompany", "correlation": -0.290487},
+      {"variable1": "Attrition", "variable2": "Age", "correlation": -0.140481},
+      {"variable1": "Attrition", "variable2": "Salary", "correlation": -0.139158},
+      {"variable1": "Attrition", "variable2": "Attrition", "correlation": 1.000000},
+      {"variable1": "Attrition", "variable2": "JG", "correlation": -0.148735},
+      {"variable1": "Attrition", "variable2": "Distance From Home", "correlation": 0.848735},
+      {"variable1": "JG", "variable2": "ManagerRating", "correlation": 0.017512},
+      {"variable1": "JG", "variable2": "TrainingOpportunitiesTaken", "correlation": 0.007325},
+      {"variable1": "JG", "variable2": "YearsAtCompany", "correlation": 0.206859},
+      {"variable1": "JG", "variable2": "Age", "correlation": 0.534104},
+      {"variable1": "JG", "variable2": "Salary", "correlation": 0.919764},
+      {"variable1": "JG", "variable2": "Attrition", "correlation": -0.148735},
+      {"variable1": "JG", "variable2": "JG", "correlation": 1.000000},
+      {"variable1": "JG", "variable2": "Distance From Home", "correlation": 0.012000},
+      {"variable1": "Distance From Home", "variable2": "ManagerRating", "correlation": 0.017512},
+      {"variable1": "Distance From Home", "variable2": "TrainingOpportunitiesTaken", "correlation": 0.007325},
+      {"variable1": "Distance From Home", "variable2": "YearsAtCompany", "correlation": 0.106859},
+      {"variable1": "Distance From Home", "variable2": "Age", "correlation": 0.234104},
+      {"variable1": "Distance From Home", "variable2": "Salary", "correlation": 0.019764},
+      {"variable1": "Distance From Home", "variable2": "Attrition", "correlation": 0.848735},
+      {"variable1": "Distance From Home", "variable2": "Distance From Home", "correlation": 1.000000},
+      {"variable1": "Distance From Home", "variable2": "JG", "correlation": 0.012000}
+    ]
+  },
+  "layer": [
+    {
+      "mark": "rect",
+      "encoding": {
+        "x": {
+          "field": "variable1",
+          "type": "nominal",
+          "title": null
+        },
+        "y": {
+          "field": "variable2",
+          "type": "nominal",
+          "title": null
+        },
+        "color": {
+          "field": "correlation",
+          "type": "quantitative",
+          "scale": {
+            "domain": [-1, 1],
+            "scheme": "purplegreen"
+          }
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "baseline": "middle",
+        "fontSize": 12,
+        "color": "black"
+      },
+      "encoding": {
+        "text": {"field": "correlation", "type": "quantitative", "format": ".2f"},
+        "x": {
+          "field": "variable1",
+          "type": "nominal"
+        },
+        "y": {
+          "field": "variable2",
+          "type": "nominal"
+        }
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelColor": "#000",
+      "labelFontSize": 12
+    }
+  }
+}
