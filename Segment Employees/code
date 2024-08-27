@@ -14,7 +14,17 @@
   },
   "transform": [
     {
-      "calculate": "datum.avg_score > 2.75 && datum.Pioritize_factor > 15 ? 'Ongoing Promotion Zone' : datum.avg_score > 2.75 && datum.Pioritize_factor <= 15 ? 'Keep onGoing Zone' : datum.avg_score <= 2.75 && datum.Pioritize_factor > 15 ? 'Critical Development Zone' : 'Have Develop Zone'",
+      "joinaggregate": [
+        {
+          "op": "mean",
+          "field": "Pioritize_factor_",
+          "as": "avg_Pioritize_factor"
+        }
+      ],
+      "groupby": [] // Aggregate over the entire dataset
+    },
+    {
+      "calculate": "datum.avg_score > 2.75 && datum.Pioritize_factor_ > datum.avg_Pioritize_factor ? 'Ongoing Promotion Zone' : datum.avg_score > 2.75 && datum.Pioritize_factor_ <= datum.avg_Pioritize_factor ? 'Keep onGoing Zone' : datum.avg_score <= 2.75 && datum.Pioritize_factor_ > datum.avg_Pioritize_factor ? 'Critical Development Zone' : 'Have Develop Zone'",
       "as": "Segment"
     }
   ],
@@ -42,11 +52,11 @@
           }
         },
         "y": {
-          "field": "Pioritize_factor",
+          "field": "Pioritize_factor_",
           "type": "quantitative",
           "title": "Prioritize Factor",
           "scale": {
-            "domain": [0, 30]
+            "domain": [0, 0.5]
           },
           "axis": {
             "labelFontSize": 12,
@@ -68,10 +78,9 @@
         },
         "tooltip": [
           {"field": "avg_score", "type": "quantitative", "title": "Average Score"},
-          {"field": "Pioritize_factor", "type": "quantitative", "title": "Prioritize Factor"},
+          {"field": "Pioritize_factor_", "type": "quantitative", "title": "Prioritize Factor"},
           {"field": "Segment", "type": "nominal", "title": "Segment"},
-          {"field": "Attribute", "type": "nominal",
-          "title" : "Factor"}
+          {"field": "Factor", "type": "nominal", "title": "Factor"}
         ]
       }
     },
@@ -81,7 +90,7 @@
         "color": "#333",
         "strokeWidth": 1.5,
         "strokeDash": [4, 4],
-        "opacity": 0.1
+        "opacity": 0.7
       },
       "encoding": {
         "x": {
@@ -95,18 +104,20 @@
         "color": "#000000",
         "strokeWidth": 1.5,
         "strokeDash": [4, 4],
-        "opacity": 0.1
+        "opacity": 0.7
       },
       "encoding": {
         "y": {
-          "datum": 15
+          "field": "avg_Pioritize_factor",
+          "type": "quantitative",
+          "title": "Average Prioritize Factor"
         }
       }
     },
     {
       "mark": {
         "type": "text",
-        "dy": -15,  // Adjust this value to move labels up or down
+        "dy": -15,
         "fontSize": 10,
         "color": "#333"
       },
@@ -116,11 +127,11 @@
           "type": "quantitative"
         },
         "y": {
-          "field": "Pioritize_factor",
+          "field": "Pioritize_factor_",
           "type": "quantitative"
         },
         "text": {
-          "field": "Attribute",
+          "field": "Factor",
           "type": "nominal"
         }
       }
