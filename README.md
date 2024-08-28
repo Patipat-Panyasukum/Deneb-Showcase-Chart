@@ -22,7 +22,7 @@ Integration with Power BI
 
  ## Segment Empoyees group by advanced scatter plot
  
-![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/Segment%20Employees/Segment.PNG?raw=true)
+![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/Segment%20Employees/Employees%20segments.PNG?raw=true)
 
 
 ## Quartdance sactter PCT blind Spot Analysis
