@@ -12,196 +12,63 @@
     "color": "#333",
     "font": "Supermarket"
   },
-    "data": {
-      "name": "dataset"
+  "data": {
+    "name": "dataset"
   },
   "padding": {"left": -70, "right": 10, "top": 10, "bottom": 0},
+    "params": [
+    {
+      "name": "GEN",
+      "value": [{"GEN" : "Gen Y"}], 
+      "bind": {
+        "name": "Generation",
+        "input": "select",
+        "options": ["All","Gen X", "Gen Y", "Gen Z", "Baby Boomer"]  // List all possible GEN values
+      }
+    },
+    {
+      "name": "Job_Function",
+      "value": [{"Job_Family" : "Core Function"}], 
+      "bind": {
+        "name": "Job Function",
+        "input": "select",
+        "options": ["All","Core Function","Semi Core Function","Support Core Function"] // List all Job function
+      }
+    }
+  ],
   "transform": [
+    {
+      "calculate": "datum.GEN == GEN ? true : false",
+      "as": "GEN_Filter"
+    },
+    {
+      "calculate":"datum.Job_Family == Job_Function ? true : false",
+      "as": "Job_Function_Filter"
+    },
+    {
+      "filter": "datum.GEN_Filter && datum.Job_Function_Filter"
+    },   
     {
       "calculate": "datum.avg_score_factor > 2.75 && datum.Percentile_Prioritize_Factor > 0.5 ? 'Ongoing Promotion Zone' : datum.avg_score_factor > 2.75 && datum.Percentile_Prioritize_Factor <= 0.5 ? 'Keep on Going Zone' : datum.avg_score_factor <= 2.75 && datum.Percentile_Prioritize_Factor > 0.5 ? 'Critical Development Zone' : 'Have Develop Zone'",
       "as": "Segment"
-    }
+    },
+    {
+      "calculate": "datum['Abbreviated Factor'] == 'CV' ? 'Culture & Value' : datum['Abbreviated Factor'] == 'TD' ? 'Target & Direction' : datum['Abbreviated Factor'] == 'TH' ? 'Transparency / Honestly' : datum['Abbreviated Factor'] == 'LTO' ? 'Listen to Opinion' : datum['Abbreviated Factor'] == 'EEA' ? 'Employee Empowerment / Autonomy' : datum['Abbreviated Factor'] == 'FT' ? 'Fair Treatment' : datum['Abbreviated Factor'] == 'RWD' ? 'Rewards' : datum['Abbreviated Factor'] == 'PNM' ? 'Punishment' : datum['Abbreviated Factor'] == 'PM' ? 'Performance Management' : datum['Abbreviated Factor'] == 'FA' ? 'Flexibility & Adaptability' : datum['Abbreviated Factor'] == 'STD' ? 'Standard' : datum['Abbreviated Factor'] == 'RR' ? 'Rules & Regulations' : datum['Abbreviated Factor'] == 'BI' ? 'Brand Image' : datum['Abbreviated Factor'] == 'PRD' ? 'Proud' : datum['Abbreviated Factor'] == 'COM' ? 'Communication' : datum['Abbreviated Factor'] == 'JS' ? 'Job Satisfaction' : datum['Abbreviated Factor'] == 'JE' ? 'Job Expectation' : datum['Abbreviated Factor'] == 'LOC' ? 'Line of Command' : datum['Abbreviated Factor'] == 'ATH' ? 'Authority' : datum['Abbreviated Factor'] == 'JSY' ? 'Job Security' : datum['Abbreviated Factor'] == 'PO' ? 'Planning & Organizing' : datum['Abbreviated Factor'] == 'WP' ? 'Working Process' : datum['Abbreviated Factor'] == 'PSDM' ? 'Problem Solving & Decision Making' : datum['Abbreviated Factor'] == 'COOP' ? 'Cooperation' : datum['Abbreviated Factor'] == 'PC' ? 'People Capability' : datum['Abbreviated Factor'] == 'RC' ? 'Relationship (Colleague)' : datum['Abbreviated Factor'] == 'RIS' ? 'Relationship (Immediate Supervisor)' : datum['Abbreviated Factor'] == 'TW' ? 'Teamwork' : datum['Abbreviated Factor'] == 'RO' ? 'Respect Others' : datum['Abbreviated Factor'] == 'DC' ? 'Discipline / Compliance' : datum['Abbreviated Factor'] == 'LDR' ? 'Leadership' : datum['Abbreviated Factor'] == 'CMP' ? 'Compensation' : datum['Abbreviated Factor'] == 'BEN' ? 'Benefits' : datum['Abbreviated Factor'] == 'REC' ? 'Recognition' : datum['Abbreviated Factor'] == 'CO' ? 'Career Opportunities' : datum['Abbreviated Factor'] == 'LD' ? 'Learning & Development' : datum['Abbreviated Factor'] == 'GCL' ? 'Growth & Continuous Learning' : datum['Abbreviated Factor'] == 'WLB' ? 'Work Life Balance' : datum['Abbreviated Factor'] == 'PWE' ? 'Physical Work Environment' : datum['Abbreviated Factor'] == 'TECH' ? 'Technology' : 'Unknown'",
+      "as": "Factor_Description"
+    },
+{
+  "calculate": "datum['Abbreviated Factor'] == 'CV' || datum['Abbreviated Factor'] == 'TD' || datum['Abbreviated Factor'] == 'TH' ? 'Company & Directions' : datum['Abbreviated Factor'] == 'LTO' ? 'Opportunities' : datum['Abbreviated Factor'] == 'EEA' ? 'Accountability' : datum['Abbreviated Factor'] == 'FT' ? 'System' : datum['Abbreviated Factor'] == 'RWD' || datum['Abbreviated Factor'] == 'PNM' ? 'Rewards & Recognition' : datum['Abbreviated Factor'] == 'PM' ? 'System' : datum['Abbreviated Factor'] == 'FA' ? 'Company & Directions' : datum['Abbreviated Factor'] == 'STD' || datum['Abbreviated Factor'] == 'RR' ? 'System' : datum['Abbreviated Factor'] == 'BI' || datum['Abbreviated Factor'] == 'PRD' ? 'Company & Directions' : datum['Abbreviated Factor'] == 'COM' ? 'Team Work' : datum['Abbreviated Factor'] == 'JS' || datum['Abbreviated Factor'] == 'JE' ? 'Accountability' : datum['Abbreviated Factor'] == 'LOC' ? 'Leadership' : datum['Abbreviated Factor'] == 'ATH' ? 'Accountability' : datum['Abbreviated Factor'] == 'JSY' ? 'Quality of Life' : datum['Abbreviated Factor'] == 'PO' ? 'Leadership' : datum['Abbreviated Factor'] == 'WP' ? 'System' : datum['Abbreviated Factor'] == 'PSDM' ? 'Leadership' : datum['Abbreviated Factor'] == 'COOP' ? 'Team Work' : datum['Abbreviated Factor'] == 'PC' ? 'Opportunities' : datum['Abbreviated Factor'] == 'RC' ? 'Team Work' : datum['Abbreviated Factor'] == 'RIS' ? 'Leadership' : datum['Abbreviated Factor'] == 'TW' || datum['Abbreviated Factor'] == 'RO' ? 'Team Work' : datum['Abbreviated Factor'] == 'DC' ? 'System' : datum['Abbreviated Factor'] == 'LDR' ? 'Leadership' : datum['Abbreviated Factor'] == 'CMP' || datum['Abbreviated Factor'] == 'BEN' || datum['Abbreviated Factor'] == 'REC' ? 'Rewards & Recognition' : datum['Abbreviated Factor'] == 'CO' ? 'Opportunities' : datum['Abbreviated Factor'] == 'LD' || datum['Abbreviated Factor'] == 'GCL' ? 'Opportunities' : datum['Abbreviated Factor'] == 'WLB' || datum['Abbreviated Factor'] == 'PWE' || datum['Abbreviated Factor'] == 'TECH' ? 'Quality of Life' : 'Unknown'",
+  "as": "Factor_Group"
+}
   ],
   "layer": [
     {
       "mark": {
         "type": "rect",
-        "fill": "#ec38a4",  // Critical Development Zone 4
+        "fill": "#f080c3",
         "opacity": 0.3,
         "stroke": "#ef092c",
-        "strokeWidth": 2,
-        "strokeDash" :[4,4]
-      },
-      "encoding": {
-        "x": {
-          "datum": 1,
-          "type": "quantitative"
-        },
-        "x2": {
-          "datum": 2.75,
-          "type": "quantitative"
-        },
-        "y": {
-          "datum": 0.95,
-          "type": "quantitative"
-        },
-        "y2": {
-          "datum": 1,
-          "type": "quantitative"
-        }
-      },
-      "transform": [
-        {
-          "filter": "datum.avg_score_factor > 2.75 && datum.Percentile_Prioritize_Factor > 0.5"
-        }
-      ]
-    },
-    {
-      "mark": { // add label layer
-        "type": "text",
-        "color": "#f9f9f9",
-        "fontSize": 16,
-        "align": "right",
-        "baseline": "middle",
-        "font": "Supermarket",
-        "fontWeight":"lighter"
-      },
-      "encoding": {
-        "x": {
-          "datum": 1.2,
-          "type": "quantitative"
-        },
-        "y": {
-          "datum": 0.975,
-          "type": "quantitative"
-        },
-        "text": {
-          "value": "Zone 4"
-        }
-      }
-    },
-    {
-      "mark": {
-        "type": "rect",
-        "fill": "#f163b8",  // Critical Development Zone 3
-        "opacity": 0.3,
-        "stroke": "#ef092c",
-        "strokeWidth": 2,
-        "strokeDash" :[4,4]
-      },
-      "encoding": {
-        "x": {
-          "datum": 1,
-          "type": "quantitative"
-        },
-        "x2": {
-          "datum": 2.75,
-          "type": "quantitative"
-        },
-        "y": {
-          "datum": 0.80,
-          "type": "quantitative"
-        },
-        "y2": {
-          "datum": 0.95,
-          "type": "quantitative"
-        }
-      },
-      "transform": [
-        {
-          "filter": "datum.avg_score_factor > 2.75 && datum.Percentile_Prioritize_Factor > 0.5"
-        }
-      ]
-    },
-    {
-      "mark": { // add label layer
-        "type": "text",
-        "color": "#f9f9f9",
-        "fontSize": 16,
-        "align": "right",
-        "baseline": "middle",
-        "font": "Supermarket",
-        "fontWeight":"lighter"
-      },
-      "encoding": {
-        "x": {
-          "datum": 1.2,
-          "type": "quantitative"
-        },
-        "y": {
-          "datum": 0.875,
-          "type": "quantitative"
-        },
-        "text": {
-          "value": "Zone 3"
-        }
-      }
-    },
-    {
-      "mark": {
-        "type": "rect",
-        "fill": "#ef83c4",  // Critical Development Zone 2
-        "opacity": 0.3,
-        "stroke": "#ef092c",
-        "strokeWidth": 2,
-        "strokeDash" :[4,4]
-      },
-      "encoding": {
-        "x": {
-          "datum": 1,
-          "type": "quantitative"
-        },
-        "x2": {
-          "datum": 2.75,
-          "type": "quantitative"
-        },
-        "y": {
-          "datum": 0.65,
-          "type": "quantitative"
-        },
-        "y2": {
-          "datum": 0.80,
-          "type": "quantitative"
-        }
-      },
-      "transform": [
-        {
-          "filter": "datum.avg_score_factor > 2.75 && datum.Percentile_Prioritize_Factor > 0.5"
-        }
-      ]
-    },
-    {
-      "mark": { // add label layer
-        "type": "text",
-        "color": "#f9f9f9",
-        "fontSize": 16,
-        "align": "right",
-        "baseline": "middle",
-        "font": "Supermarket",
-        "fontWeight":"lighter"
-      },
-      "encoding": {
-        "x": {
-          "datum": 1.2,
-          "type": "quantitative"
-        },
-        "y": {
-          "datum": 0.72,
-          "type": "quantitative"
-        },
-        "text": {
-          "value": "Zone 2"
-        }
-      }
-    },
-    {
-      "mark": {
-        "type": "rect",
-        "fill": "#f8b8de",  // Critical Development Zone 1
-        "opacity": 0.3,
-        "stroke": "#ef092c",
-        "strokeWidth": 2,
-        "strokeDash" :[4,4]
+        "strokeWidth": 1
       },
       "encoding": {
         "x": {
@@ -217,48 +84,80 @@
           "type": "quantitative"
         },
         "y2": {
-          "datum": 0.65,
+          "datum": 1,
           "type": "quantitative"
         }
       },
       "transform": [
         {
-          "filter": "datum.avg_score_factor > 2.75 && datum.Percentile_Prioritize_Factor > 0.5"
+          "filter": "datum['avg_score_factor'] <= 2.75 && datum['Percentile_Prioritize_Factor'] > 0.5"
         }
       ]
     },
-    {
-      "mark": { // add label layer
+   {
+      "mark": { // add label layer (Critical Development zone)
         "type": "text",
-        "color": "#fcfcfc",
-        "fontSize": 16,
+        "color": "#000000",
+        "fontSize": 18,
         "align": "right",
         "baseline": "middle",
         "font": "Supermarket",
-        "fontWeight":"lighter"
+        "fontWeight":"lighter",
+        "fontStyle": "lighter"
       },
       "encoding": {
         "x": {
-          "datum": 1.2,
+          "datum": 1.5,
           "type": "quantitative"
         },
         "y": {
-          "datum": 0.575,
+          "datum": 0.965,
           "type": "quantitative"
         },
         "text": {
-          "value": "Zone 1"
+          "value": "Critical Development Zone"
         }
       }
     },
     {
+      "mark": { // bg text 
+        "type": "rect",
+        "fill": "#f1e8e8",
+        "opacity": 0.02,
+        "stroke": "#e3e3e2",
+        "strokeWidth": 0
+      },
+      "encoding": {
+        "x": {
+          "datum": 1.03,
+          "type": "quantitative"
+        },
+        "x2": {
+          "datum": 1.55,
+          "type": "quantitative"
+        },
+        "y": {
+          "datum": 0.995,
+          "type": "quantitative"
+        },
+        "y2": {
+          "datum": 0.94,
+          "type": "quantitative"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum['avg_score_factor'] <= 2.75 && datum['Percentile_Prioritize_Factor'] > 0.5"
+        }
+      ]
+    },
+    {
       "mark": {
         "type": "rect",
-        "fill": "#f0f5a2",  // Have develop Zone 1
+        "fill": "#f0f5a2",
         "opacity": 0.3,
         "stroke": "#fdb500",
-        "strokeWidth": 2,
-        "strokeDash" :[4,4]
+        "strokeWidth": 1
       },
       "encoding": {
         "x": {
@@ -270,127 +169,84 @@
           "type": "quantitative"
         },
         "y": {
-          "datum": 0.15,
-          "type": "quantitative"
-        },
-        "y2": {
           "datum": 0,
           "type": "quantitative"
-        }
-      },
-      "transform": [
-        {
-          "filter": "datum.avg_score_factor > 2.75 && datum.Percentile_Prioritize_Factor <= 0.5"
-        }
-      ]
-    },
-    {
-      "mark": {
-        "type": "rect",
-        "fill": "#ecf478",  // Have develop Zone 2
-        "opacity": 0.3,
-        "stroke": "#fdb500",
-        "strokeWidth": 2,
-        "strokeDash" :[4,4]
-      },
-      "encoding": {
-        "x": {
-          "datum": 1,
-          "type": "quantitative"
-        },
-        "x2": {
-          "datum": 2.75,
-          "type": "quantitative"
-        },
-        "y": {
-          "datum": 0.3,
-          "type": "quantitative"
         },
         "y2": {
-          "datum": 0.15,
-          "type": "quantitative"
-        }
-      },
-      "transform": [
-        {
-          "filter": "datum.avg_score_factor > 2.75 && datum.Percentile_Prioritize_Factor >= 0.5"
-        }
-      ]
-    },
-    {
-      "mark": {
-        "type": "rect",
-        "fill": "#ecf752",  // Have develop Zone 3
-        "opacity": 0.3,
-        "stroke": "#fdb500",
-        "strokeWidth": 2,
-        "strokeDash" :[4,4]
-      },
-      "encoding": {
-        "x": {
-          "datum": 1,
-          "type": "quantitative"
-        },
-        "x2": {
-          "datum": 2.75,
-          "type": "quantitative"
-        },
-        "y": {
-          "datum": 0.45,
-          "type": "quantitative"
-        },
-        "y2": {
-          "datum": 0.3,
-          "type": "quantitative"
-        }
-      },
-      "transform": [
-        {
-          "filter": "datum.avg_score_factor > 2.75 && datum.Percentile_Prioritize_Factor >= 0.5"
-        }
-      ]
-    },
-    {
-      "mark": {
-        "type": "rect",
-        "fill": "#fff70c",  // Have develop Zone 4
-        "opacity": 0.3,
-        "stroke": "#fdb500",
-        "strokeWidth": 2,
-        "strokeDash" :[4,4]
-      },
-      "encoding": {
-        "x": {
-          "datum": 1,
-          "type": "quantitative"
-        },
-        "x2": {
-          "datum": 2.75,
-          "type": "quantitative"
-        },
-        "y": {
           "datum": 0.5,
           "type": "quantitative"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum['avg_score_factor'] <= 2.75 && datum['Percentile_Prioritize_Factor'] <= 0.5"
+        }
+      ]
+    },
+   {
+      "mark": { // add label layer Have Develop zone
+        "type": "text",
+        "color": "#000000",
+        "fontSize": 18,
+        "align": "right",
+        "baseline": "middle",
+        "font": "Supermarket",
+        "fontWeight":"lighter",
+        "fontStyle": "lighter"
+      },
+      "encoding": {
+        "x": {
+          "datum": 1.4,
+          "type": "quantitative"
+        },
+        "y": {
+          "datum": 0.46,
+          "type": "quantitative"
+        },
+        "text": {
+          "value": "Have Develop Zone"
+        }
+      }
+    },
+    {
+      "mark": { // bg text Have Develop zone
+        "type": "rect",
+        "fill": "#aca9a9",
+        "opacity": 0.02,
+        "stroke": "#e3e3e2",
+        "strokeWidth": 0
+      },
+      "encoding": {
+        "x": {
+          "datum": 1.03,
+          "type": "quantitative"
+        },
+        "x2": {
+          "datum": 1.43,
+          "type": "quantitative"
+        },
+        "y": {
+          "datum": 0.48,
+          "type": "quantitative"
         },
         "y2": {
-          "datum": 0.45,
+          "datum": 0.43,
           "type": "quantitative"
         }
       },
       "transform": [
         {
-          "filter": "datum.avg_score_factor > 2.75 && datum.Percentile_Prioritize_Factor >= 0.5"
+          "filter": "datum['avg_score_factor'] <= 2.75 && datum['Percentile_Prioritize_Factor'] <= 0.5"
         }
       ]
     },
     {
       "mark": {
         "type": "rect",
-        "fill": "#a6f7a4",  // Ongoing Promotion Zone 1
+        "fill": "#a6f7a4",
         "opacity": 0.3,
         "stroke": "#41bd0f",
-        "strokeWidth": 2,
-        "strokeDash" :[4,4]
+        "strokeWidth": 1
       },
       "encoding": {
         "x": {
@@ -406,123 +262,80 @@
           "type": "quantitative"
         },
         "y2": {
-          "datum": 0.65,
-          "type": "quantitative"
-        }
-      },
-      "transform": [
-        {
-          "filter": "datum.avg_score_factor <= 2.75 && datum.Percentile_Prioritize_Factor > 0.5"
-        }
-      ]
-    },
-    {
-      "mark": {
-        "type": "rect",
-        "fill": "#8ef98d",  // Ongoing Promotion Zone 2
-        "opacity": 0.3,
-        "stroke": "#41bd0f",
-        "strokeWidth": 2,
-        "strokeDash" :[4,4]
-      },
-      "encoding": {
-        "x": {
-          "datum": 2.75,
-          "type": "quantitative"
-        },
-        "x2": {
-          "datum": 4,
-          "type": "quantitative"
-        },
-        "y": {
-          "datum": 0.65,
-          "type": "quantitative"
-        },
-        "y2": {
-          "datum": 0.8,
-          "type": "quantitative"
-        }
-      },
-      "transform": [
-        {
-          "filter": "datum.avg_score_factor <= 2.75 && datum.Percentile_Prioritize_Factor > 0.5"
-        }
-      ]
-    },
-    {
-      "mark": {
-        "type": "rect",
-        "fill": "#5ff75c",  // Ongoing Promotion Zone 3
-        "opacity": 0.3,
-        "stroke": "#41bd0f",
-        "strokeWidth": 2,
-        "strokeDash" :[4,4]
-      },
-      "encoding": {
-        "x": {
-          "datum": 2.75,
-          "type": "quantitative"
-        },
-        "x2": {
-          "datum": 4,
-          "type": "quantitative"
-        },
-        "y": {
-          "datum": 0.8,
-          "type": "quantitative"
-        },
-        "y2": {
-          "datum": 0.95,
-          "type": "quantitative"
-        }
-      },
-      "transform": [
-        {
-          "filter": "datum.avg_score_factor <= 2.75 && datum.Percentile_Prioritize_Factor > 0.5"
-        }
-      ]
-    },
-    {
-      "mark": {
-        "type": "rect",
-        "fill": "#26ff22",  // Ongoing Promotion Zone 4
-        "opacity": 0.3,
-        "stroke": "#41bd0f",
-        "strokeWidth": 2,
-        "strokeDash" :[4,4]
-      },
-      "encoding": {
-        "x": {
-          "datum": 2.75,
-          "type": "quantitative"
-        },
-        "x2": {
-          "datum": 4,
-          "type": "quantitative"
-        },
-        "y": {
-          "datum": 0.95,
-          "type": "quantitative"
-        },
-        "y2": {
           "datum": 1,
           "type": "quantitative"
         }
       },
       "transform": [
         {
-          "filter": "datum.avg_score_factor <= 2.75 && datum.Percentile_Prioritize_Factor > 0.5"
+          "filter": "datum['avg_score_factor'] <= 2.75 && datum['Percentile_Prioritize_Factor'] < 0.5"
+        }
+      ]
+    },
+   {
+      "mark": { // add label layer Ongoing Promotion Zone
+        "type": "text",
+        "color": "#000000",
+        "fontSize": 18,
+        "align": "right",
+        "baseline": "middle",
+        "font": "Supermarket",
+        "fontWeight":"lighter",
+        "fontStyle": "lighter"
+      },
+      "encoding": {
+        "x": {
+          "datum": 3.95,
+          "type": "quantitative"
+        },
+        "y": {
+          "datum": 0.95,
+          "type": "quantitative"
+        },
+        "text": {
+          "value": "Ongoing Promotion Zone"
+        }
+      }
+    },
+    {
+      "mark": { // bg text Ongoing Promotion Zone
+        "type": "rect",
+        "fill": "#aca9a9",
+        "opacity": 0.04,
+        "stroke": "#e3e3e2",
+        "strokeWidth": 0
+      },
+      "encoding": {
+        "x": {
+          "datum": 3.967,
+          "type": "quantitative"
+        },
+        "x2": {
+          "datum": 3.5,
+          "type": "quantitative"
+        },
+        "y": {
+          "datum": 0.92,
+          "type": "quantitative"
+        },
+        "y2": {
+          "datum": 0.99,
+          "type": "quantitative"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum['avg_score_factor'] <= 2.75 && datum['Percentile_Prioritize_Factor'] < 0.5"
         }
       ]
     },
     {
       "mark": {
         "type": "rect",
-        "fill": "#aae2f3",  // keep ongoing zone 1
+        "fill": "#aae2f3",
         "opacity": 0.3,
         "stroke": "#4b25f7",
-        "strokeWidth": 1,
-        "strokeDash" : [4,4]
+        "strokeWidth": 1
       },
       "encoding": {
         "x": {
@@ -538,112 +351,70 @@
           "type": "quantitative"
         },
         "y2": {
-          "datum": 0.15,
-          "type": "quantitative"
-        }
-      },
-      "transform": [
-        {
-          "filter": "datum.avg_score_factor <= 2.75 && datum.Percentile_Prioritize_Factor <= 0.5"
-        }
-      ]
-    },
-    {
-      "mark": {
-        "type": "rect",
-        "fill": "#8cd6ed",  // keep ongoing zone 2
-        "opacity": 0.3,
-        "stroke": "#4b25f7",
-        "strokeWidth": 1,
-        "strokeDash": [4,4]
-      },
-      "encoding": {
-        "x": {
-          "datum": 2.75,
-          "type": "quantitative"
-        },
-        "x2": {
-          "datum": 4,
-          "type": "quantitative"
-        },
-        "y": {
-          "datum": 0.15,
-          "type": "quantitative"
-        },
-        "y2": {
-          "datum": 0.3,
-          "type": "quantitative"
-        }
-      },
-      "transform": [
-        {
-          "filter": "datum.avg_score_factor <= 2.75 && datum.Percentile_Prioritize_Factor <= 0.5"
-        }
-      ]
-    },
-    {
-      "mark": {
-        "type": "rect",
-        "fill": "#64c9e7",  // keep ongoing zone 3
-        "opacity": 0.3,
-        "stroke": "#4b25f7",
-        "strokeWidth": 1,
-        "strokeDash" : [4,4]
-      },
-      "encoding": {
-        "x": {
-          "datum": 2.75,
-          "type": "quantitative"
-        },
-        "x2": {
-          "datum": 4,
-          "type": "quantitative"
-        },
-        "y": {
-          "datum": 0.3,
-          "type": "quantitative"
-        },
-        "y2": {
-          "datum": 0.45,
-          "type": "quantitative"
-        }
-      },
-      "transform": [
-        {
-          "filter": "datum.avg_score_factor <= 2.75 && datum.Percentile_Prioritize_Factor <= 0.5"
-        }
-      ]
-    },
-    {
-      "mark": {
-        "type": "rect",
-        "fill": "#1dd8f47a",  // keep ongoing zone 4
-        "opacity": 0.3,
-        "stroke": "#4b25f7",
-        "strokeWidth": 1,
-        "strokeDash": [4,4]
-      },
-      "encoding": {
-        "x": {
-          "datum": 2.75,
-          "type": "quantitative"
-        },
-        "x2": {
-          "datum": 4,
-          "type": "quantitative"
-        },
-        "y": {
-          "datum": 0.45,
-          "type": "quantitative"
-        },
-        "y2": {
           "datum": 0.5,
           "type": "quantitative"
         }
       },
       "transform": [
         {
-          "filter": "datum.avg_score_factor <= 2.75 && datum.Percentile_Prioritize_Factor <= 0.5"
+          "filter": "datum['avg_score_factor'] >= 2.75 && datum['Percentile_Prioritize_Factor'] <= 0.5"
+        }
+      ]
+    },
+   {
+      "mark": { // add label layer Keep ongoing zone
+        "type": "text",
+        "color": "#000000",
+        "fontSize": 18,
+        "align": "right",
+        "baseline": "middle",
+        "font": "Supermarket",
+        "fontWeight":"lighter",
+        "fontStyle": "lighter"
+      },
+      "encoding": {
+        "x": {
+          "datum": 3.95,
+          "type": "quantitative"
+        },
+        "y": {
+          "datum": 0.46,
+          "type": "quantitative"
+        },
+        "text": {
+          "value": "Keep Ongoing Zone"
+        }
+      }
+    },
+    {
+      "mark": { // bg text Keep ongoing zone
+        "type": "rect",
+        "fill": "#aca9a9",
+        "opacity": 0.02,
+        "stroke": "#e3e3e2",
+        "strokeWidth": 0
+      },
+      "encoding": {
+        "x": {
+          "datum": 3.967,
+          "type": "quantitative"
+        },
+        "x2": {
+          "datum": 3.58,
+          "type": "quantitative"
+        },
+        "y": {
+          "datum": 0.48,
+          "type": "quantitative"
+        },
+        "y2": {
+          "datum": 0.43,
+          "type": "quantitative"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum['avg_score_factor'] >= 2.75 && datum['Percentile_Prioritize_Factor'] <= 0.5"
         }
       ]
     },
@@ -651,7 +422,7 @@
       "mark": {
         "type": "point",
         "filled": true,
-        "size": 100,
+        "size": 120,
         "opacity": 0.7
       },
       "encoding": {
@@ -681,8 +452,8 @@
             "domain": [0, 1]
           },
           "axis": {
-          "format": ".0%",
-          "labelExpr": "datum.value * 100 + '%'",
+            "format": ".0%",
+            "labelExpr": "'P'+ datum.value * 100 ",
             "labelFontSize": 12,
             "titleFontSize": 16,
             "tickColor": "#666",
@@ -692,24 +463,46 @@
           }
         },
         "color": {
-          "field": "Segment",
+          "field": "Factor_Group",
           "type": "nominal",
-          "title": "Segment",
+          "title": "Factor Category",
           "legend": {
             "labelFontSize": 12,
             "titleFontSize": 14,
             "symbolSize": 100
           },
           "scale": {
-            "range": ["#e41a1c", "#ff9800", "#1eb8ff", "#4daf4a"]
+          "domain": [
+          "Company & Directions", "Opportunities", "Accountability", "System", "Rewards & Recognition","Team Work", "Leadership", "Quality of Life"],
+            "range": [
+              "#B71C1C", // Intense Red
+              "#E64A19", // Deep Orange
+              "#F57F17", // Bright Yellow
+              "#4CAF50", // Strong Green
+              "#1E88E5", // Deep Blue
+              "#8E24AA", // Intense Purple
+              "#F57C00", // Vibrant Orange
+              "#00796B"  // Rich Teal
+            ]
+          }
+        },
+        "shape": {
+          "field": "Factor_Group",
+          "type": "nominal",
+          "title": "Factor Category",
+          "scale": {
+          "domain": [
+          "Company & Directions", "Opportunities", "Accountability", "System", "Rewards & Recognition","Team Work", "Leadership", "Quality of Life"],
+          "range": ["circle", "square", "triangle", "cross","diamond","triangle-down","triangle-left","triangle-right"]
           }
         },
         "tooltip": [
           {"field": "avg_score_factor", "type": "quantitative", "title": "Average Score"},
           {"field": "Percentile_Prioritize_Factor", "type": "quantitative", "title": "Prioritize Factor"},
+          {"field": "Pioritize_factor_", "type": "quantitative", "title": "Significant Rate"},
           {"field": "Segment", "type": "nominal", "title": "Segment"},
-          {"field": "Factor", "type": "nominal", "title": "Factor"},
-          {"field": "Pioritize_factor_", "type": "quantitative", "title": "Significant Rate"}
+          {"field": "Factor_Description", "type": "nominal", "title": "Factor Description"},
+          {"field": "Factor_Group", "type": "nominal", "title": "Factor_Group"}
         ]
       }
     },
@@ -718,6 +511,7 @@
         "type": "rule",
         "color": "#000000",
         "strokeWidth": 1.5,
+        "strokeDash": [4, 4],
         "opacity": 0.5,
         "font": "Supermarket"
       },
@@ -732,6 +526,7 @@
         "type": "rule",
         "color": "#000000",
         "strokeWidth": 1.5,
+        "strokeDash": [4, 4],
         "opacity": 0.5,
         "font": "Supermarket"
       },
@@ -744,10 +539,11 @@
     {
       "mark": {
         "type": "text",
-        "dy": -14,
-        "fontSize": 14,
+        "dy": -10,
+        "fontSize": 11,
         "color": "#333",
-        "font": "Supermarket"
+        "font": "Supermarket",
+        "lineHeight": -12
       },
       "encoding": {
         "x": {
@@ -759,7 +555,7 @@
           "type": "quantitative"
         },
         "text": {
-          "field": "Factor",
+          "field": "Abbreviated Factor",
           "type": "nominal"
         }
       }
@@ -773,8 +569,8 @@
       "gridOpacity": 0.5
     },
     "legend": {
-      "orient": "bottom-right",
-      "titleFontSize": 16,
+      "orient": "bottom-left",
+      "titleFontSize": 13,
       "labelFontSize": 14,
       "labelFont": "Supermarket"
     }
