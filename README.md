@@ -20,7 +20,7 @@ Integration with Power BI
 ![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/Beeswarm%20Chart/Beeswarm%20Competency%20Chart.PNG?raw=true)
 
 
- ## Segment Empoyees group by advanced scatter plot
+ ## Segment Empoyees Journey by GEN
  
 ![image all](https://github.com/Patipat-Panyasukum/Deneb-Showcase-Chart/blob/main/Segment%20Employees/Screenshot%202024-09-04%20002942.png?raw=true)
 
