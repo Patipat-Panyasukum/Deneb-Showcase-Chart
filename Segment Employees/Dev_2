@@ -1,0 +1,446 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Segment Employees & Journey by GEN",
+    "subtitle": "Segment Employees: This visualization categorizes employees into distinct segments based on their average score and prioritize factor",
+    "dy": -10,
+    "subtitleFont": "Supermarket",
+    "fontSize": 20,
+    "subtitleFontSize": 16,
+    "anchor": "start",
+    "color": "#333",
+    "font": "Supermarket"
+  },
+  "data": {"name": "dataset"},
+  "padding": {"left": -70, "right": 10, "top": 10, "bottom": 0},
+  "transform": [
+    {
+      "calculate": "datum.avg_score_factor > 2.75 && datum.Percentile_Prioritize_Factor > 0.5 ? 'Ongoing Promotion Zone' : datum.avg_score_factor > 2.75 && datum.Percentile_Prioritize_Factor <= 0.5 ? 'Keep on Going Zone' : datum.avg_score_factor <= 2.75 && datum.Percentile_Prioritize_Factor > 0.5 ? 'Critical Development Zone' : 'Have Develop Zone'",
+      "as": "Segment"
+    },
+    {
+      "calculate": "datum['Abbreviated Factor'] == 'CV' ? 'Culture & Value' : datum['Abbreviated Factor'] == 'TD' ? 'Target & Direction' : datum['Abbreviated Factor'] == 'TH' ? 'Transparency / Honestly' : datum['Abbreviated Factor'] == 'LTO' ? 'Listen to Opinion' : datum['Abbreviated Factor'] == 'EEA' ? 'Employee Empowerment / Autonomy' : datum['Abbreviated Factor'] == 'FT' ? 'Fair Treatment' : datum['Abbreviated Factor'] == 'RWD' ? 'Rewards' : datum['Abbreviated Factor'] == 'PNM' ? 'Punishment' : datum['Abbreviated Factor'] == 'PM' ? 'Performance Management' : datum['Abbreviated Factor'] == 'FA' ? 'Flexibility & Adaptability' : datum['Abbreviated Factor'] == 'STD' ? 'Standard' : datum['Abbreviated Factor'] == 'RR' ? 'Rules & Regulations' : datum['Abbreviated Factor'] == 'BI' ? 'Brand Image' : datum['Abbreviated Factor'] == 'PRD' ? 'Proud' : datum['Abbreviated Factor'] == 'COM' ? 'Communication' : datum['Abbreviated Factor'] == 'JS' ? 'Job Satisfaction' : datum['Abbreviated Factor'] == 'JE' ? 'Job Expectation' : datum['Abbreviated Factor'] == 'LOC' ? 'Line of Command' : datum['Abbreviated Factor'] == 'ATH' ? 'Authority' : datum['Abbreviated Factor'] == 'JSY' ? 'Job Security' : datum['Abbreviated Factor'] == 'PO' ? 'Planning & Organizing' : datum['Abbreviated Factor'] == 'WP' ? 'Working Process' : datum['Abbreviated Factor'] == 'PSDM' ? 'Problem Solving & Decision Making' : datum['Abbreviated Factor'] == 'COOP' ? 'Cooperation' : datum['Abbreviated Factor'] == 'PC' ? 'People Capability' : datum['Abbreviated Factor'] == 'RC' ? 'Relationship (Colleague)' : datum['Abbreviated Factor'] == 'RIS' ? 'Relationship (Immediate Supervisor)' : datum['Abbreviated Factor'] == 'TW' ? 'Teamwork' : datum['Abbreviated Factor'] == 'RO' ? 'Respect Others' : datum['Abbreviated Factor'] == 'DC' ? 'Discipline / Compliance' : datum['Abbreviated Factor'] == 'LDR' ? 'Leadership' : datum['Abbreviated Factor'] == 'CMP' ? 'Compensation' : datum['Abbreviated Factor'] == 'BEN' ? 'Benefits' : datum['Abbreviated Factor'] == 'REC' ? 'Recognition' : datum['Abbreviated Factor'] == 'CO' ? 'Career Opportunities' : datum['Abbreviated Factor'] == 'LD' ? 'Learning & Development' : datum['Abbreviated Factor'] == 'GCL' ? 'Growth & Continuous Learning' : datum['Abbreviated Factor'] == 'WLB' ? 'Work Life Balance' : datum['Abbreviated Factor'] == 'PWE' ? 'Physical Work Environment' : datum['Abbreviated Factor'] == 'TECH' ? 'Technology' : 'Unknown'",
+      "as": "Factor_Description"
+    },
+{
+  "calculate": "datum['Abbreviated Factor'] == 'CV' || datum['Abbreviated Factor'] == 'TD' || datum['Abbreviated Factor'] == 'TH' ? 'Company & Directions' : datum['Abbreviated Factor'] == 'LTO' ? 'Opportunities' : datum['Abbreviated Factor'] == 'EEA' ? 'Accountability' : datum['Abbreviated Factor'] == 'FT' ? 'System' : datum['Abbreviated Factor'] == 'RWD' || datum['Abbreviated Factor'] == 'PNM' ? 'Rewards & Recognition' : datum['Abbreviated Factor'] == 'PM' ? 'System' : datum['Abbreviated Factor'] == 'FA' ? 'Company & Directions' : datum['Abbreviated Factor'] == 'STD' || datum['Abbreviated Factor'] == 'RR' ? 'System' : datum['Abbreviated Factor'] == 'BI' || datum['Abbreviated Factor'] == 'PRD' ? 'Company & Directions' : datum['Abbreviated Factor'] == 'COM' ? 'Team Work' : datum['Abbreviated Factor'] == 'JS' || datum['Abbreviated Factor'] == 'JE' ? 'Accountability' : datum['Abbreviated Factor'] == 'LOC' ? 'Leadership' : datum['Abbreviated Factor'] == 'ATH' ? 'Accountability' : datum['Abbreviated Factor'] == 'JSY' ? 'Quality of Life' : datum['Abbreviated Factor'] == 'PO' ? 'Leadership' : datum['Abbreviated Factor'] == 'WP' ? 'System' : datum['Abbreviated Factor'] == 'PSDM' ? 'Leadership' : datum['Abbreviated Factor'] == 'COOP' ? 'Team Work' : datum['Abbreviated Factor'] == 'PC' ? 'Opportunities' : datum['Abbreviated Factor'] == 'RC' ? 'Team Work' : datum['Abbreviated Factor'] == 'RIS' ? 'Leadership' : datum['Abbreviated Factor'] == 'TW' || datum['Abbreviated Factor'] == 'RO' ? 'Team Work' : datum['Abbreviated Factor'] == 'DC' ? 'System' : datum['Abbreviated Factor'] == 'LDR' ? 'Leadership' : datum['Abbreviated Factor'] == 'CMP' || datum['Abbreviated Factor'] == 'BEN' || datum['Abbreviated Factor'] == 'REC' ? 'Rewards & Recognition' : datum['Abbreviated Factor'] == 'CO' ? 'Opportunities' : datum['Abbreviated Factor'] == 'LD' || datum['Abbreviated Factor'] == 'GCL' ? 'Opportunities' : datum['Abbreviated Factor'] == 'WLB' || datum['Abbreviated Factor'] == 'PWE' || datum['Abbreviated Factor'] == 'TECH' ? 'Quality of Life' : 'Unknown'",
+  "as": "Factor_Group"
+}
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "rect",
+        "fill": "#f4abf6",
+        "opacity": 0.3,
+        "stroke": "#000000",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "x": {
+          "datum": 1,
+          "type": "quantitative"
+        },
+        "x2": {
+          "datum": 2.75,
+          "type": "quantitative"
+        },
+        "y": {
+          "datum": 1,
+          "type": "quantitative"
+        },
+        "y2": {
+          "datum": 0.5,
+          "type": "quantitative"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum['avg_score_factor'] <= 2.75 && datum['Percentile_Prioritize_Factor'] > 0.5"
+        }
+      ]
+    },
+    {
+      "mark": { // add label layer (Critical Development zone)
+        "type": "text",
+        "color": "#000000",
+        "fontSize": 18,
+        "align": "right",
+        "baseline": "middle",
+        "font": "Supermarket",
+        "fontWeight":"lighter",
+        "fontStyle": "lighter"
+      },
+      "encoding": {
+        "x": {
+          "datum": 1.75,
+          "type": "quantitative"
+        },
+        "y": {
+          "datum": 0.965,
+          "type": "quantitative"
+        },
+        "text": {
+          "value": "Critical Development Zone"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "rect",
+        "fill": "#f0f5a2",
+        "opacity": 0.3,
+        "stroke": "#000000",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "x": {
+          "datum": 1,
+          "type": "quantitative"
+        },
+        "x2": {
+          "datum": 2.75,
+          "type": "quantitative"
+        },
+        "y": {
+          "datum": 0,
+          "type": "quantitative"
+        },
+        "y2": {
+          "datum": 0.5,
+          "type": "quantitative"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum['avg_score_factor'] <= 2.75 && datum['Percentile_Prioritize_Factor'] <= 0.5"
+        }
+      ]
+    },
+   {
+      "mark": { // add label layer Have Develop zone
+        "type": "text",
+        "color": "#000000",
+        "fontSize": 18,
+        "align": "right",
+        "baseline": "middle",
+        "font": "Supermarket",
+        "fontWeight":"lighter",
+        "fontStyle": "lighter"
+      },
+      "encoding": {
+        "x": {
+          "datum": 1.6,
+          "type": "quantitative"
+        },
+        "y": {
+          "datum": 0.46,
+          "type": "quantitative"
+        },
+        "text": {
+          "value": "Have Develop Zone"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "rect",
+        "fill": "#a6f7a4",
+        "opacity": 0.2,
+        "stroke": "#000000",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "x": {
+          "datum": 2.75,
+          "type": "quantitative"
+        },
+        "x2": {
+          "datum": 4,
+          "type": "quantitative"
+        },
+        "y": {
+          "datum": 0.5,
+          "type": "quantitative"
+        },
+        "y2": {
+          "datum": 1,
+          "type": "quantitative"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum['avg_score_factor'] >= 2.75 && datum['Percentile_Prioritize_Factor'] > 0.5"
+        }
+      ]
+    },
+   {
+      "mark": { // add label layer Ongoing Promotion Zone
+        "type": "text",
+        "color": "#000000",
+        "fontSize": 18,
+        "align": "right",
+        "baseline": "middle",
+        "font": "Supermarket",
+        "fontWeight":"lighter",
+        "fontStyle": "lighter"
+      },
+      "encoding": {
+        "x": {
+          "datum": 3.95,
+          "type": "quantitative"
+        },
+        "y": {
+          "datum": 0.95,
+          "type": "quantitative"
+        },
+        "text": {
+          "value": "Ongoing Promotion Zone"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "rect",
+        "fill": "#bce7f5",
+        "opacity": 0.3,
+        "stroke": "#000000",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "x": {
+          "datum": 2.75,
+          "type": "quantitative"
+        },
+        "x2": {
+          "datum": 4,
+          "type": "quantitative"
+        },
+        "y": {
+          "datum": 0,
+          "type": "quantitative"
+        },
+        "y2": {
+          "datum": 0.5,
+          "type": "quantitative"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum['avg_score_factor'] >= 2.75 && datum['Percentile_Prioritize_Factor'] < 0.5"
+        }
+      ]
+    },
+   {
+      "mark": { // add label layer Keep ongoing zone
+        "type": "text",
+        "color": "#000000",
+        "fontSize": 18,
+        "align": "right",
+        "baseline": "middle",
+        "font": "Supermarket",
+        "fontWeight":"lighter",
+        "fontStyle": "lighter"
+      },
+      "encoding": {
+        "x": {
+          "datum": 3.95,
+          "type": "quantitative"
+        },
+        "y": {
+          "datum": 0.46,
+          "type": "quantitative"
+        },
+        "text": {
+          "value": "Keep Ongoing Zone"
+        }
+      }
+    },
+    {
+      "transform": [
+        {"filter": {"field": "Abbreviated Factor", "equal": "ATH"}},
+        {"filter": {"param": "GEN"}}
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 100,
+        "x": 540,
+        "y": 250,
+        "opacity": 0.09
+      },
+      "encoding": {"text": {"field": "GEN"}}
+    },
+    {
+      "encoding": {
+        "x": {
+          "field": "avg_score_factor",
+          "type": "quantitative",
+          "title": "Average Score",
+          "scale": {
+          "domain": [1, 4],
+          "zero": false
+          },
+          "axis": {
+            "format": ".1f",
+            "labelFontSize": 12,
+            "titleFontSize": 16,
+            "tickColor": "#666",
+            "titleFont": "Supermarket",
+            "labelPadding": 9,
+            "offset": 10
+          }
+        },
+        "y": {
+          "field": "Percentile_Prioritize_Factor",
+          "type": "quantitative",
+          "scale": {"domain": [0, 1]},
+          "axis": {
+          "format": ".0%",
+          "labelExpr": "'P'+ datum.value * 100 ",
+          "labelFontSize": 12,
+          "titleFontSize": 16,
+          "tickColor": "#666",
+          "titleFont" : "Supermarket",
+          "labelPadding": 9,
+          "offset": 12
+          }
+        }
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "line",
+            "size": 4,
+            "color": "lightgray",
+            "strokeCap": "round"
+          },
+          "encoding": {
+            "detail": {"field": "Abbreviated Factor"},
+            "order": {"field": "GEN"},
+            "opacity": {
+              "condition": {
+                "test": {
+                  "or": [
+                    {"param": "hovered", "empty": false},
+                    {"param": "clicked", "empty": false}
+                  ]
+                },
+                "value": 0.8
+              },
+              "value": 0
+            }
+          }
+        },
+        {
+          "params": [
+            {
+              "name": "GEN",
+              "value": "Gen Y",
+              "select": {
+                "type": "point",
+                "fields": ["GEN"]
+              },
+              "bind": {
+                "name": "GEN",
+                "input": "select",
+                "options": ["All", "Gen X", "Gen Y", "Gen Z", "Baby Boomer"]
+              }
+            },
+            {
+              "name": "hovered",
+              "select": {
+                "type": "point",
+                "fields": ["Abbreviated Factor"],
+                "toggle": false,
+                "on": "pointerover"
+              }
+            },
+            {
+              "name": "clicked",
+              "select": {"type": "point", "fields": ["Abbreviated Factor"]}
+            }
+          ],
+          "transform": [{"filter": {"param": "GEN"}}],
+          "mark": {"type": "circle", "size": 100, "opacity": 0.9},
+          "encoding": {
+            "color": {
+              "field": "Factor_Group",
+              "title": "Factor_Group"
+            },
+            "tooltip": [
+              {"field": "GEN", "type": "nominal", "title": "Generation"},
+              {"field": "Abbreviated Factor", "type": "nominal"},
+              {"field": "Segment", "type": "nominal", "title": "Segment"},
+              {"field": "Factor_Description", "type": "nominal", "title": "Factor Description"},
+              {"field": "Factor_Group", "type": "nominal", "title": "Factor_Group"},
+              {"field": "avg_score_factor", "type": "quantitative", "title": "Average Score"},
+              {"field": "Percentile_Prioritize_Factor", "type": "quantitative", "title": "Prioritize Factor"}
+            ]
+          }
+        },
+            {
+              "transform": [{"filter": {"param": "GEN"}}],
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "dx": 0,
+                "dy": -12,
+                "fontSize": 10
+              },
+              "encoding": {
+                "text": {"field": "Abbreviated Factor"},
+                "tooltip": {"field": "Factor_Description"}
+              }
+            },
+        {
+          "transform": [
+            {
+              "filter": {
+                "and": [
+                  {"param": "GEN"},
+                  {
+                    "or": [
+                      {"param": "clicked", "empty": false},
+                      {"param": "hovered", "empty": false}
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "yOffset": -12,
+            "fontSize": 16,
+            "fontWeight": "bold"
+          },
+          "encoding": {
+            "text": {"field": "Factor_Description"},  // Display the Generation field
+            "color": {
+              "field": "Factor_Group",
+              "title": "Factor_Group"
+            }
+          }
+        },
+        {
+          "transform": [
+            {"filter": {"param": "hovered", "empty": false}},
+            {"filter": {"not": {"param": "GEN"}}}
+          ],
+          "layer": [
+            {
+              "mark": {
+                "type": "text",
+                "yOffset": -12,
+                "fontSize": 12,
+                "color": "gray"
+              },
+              "encoding": {"text": {"field": "GEN"}}  // Update this to display GEN
+            },
+            {"mark": {"type": "circle", "color": "gray"}}
+          ]
+        }
+      ]
+    }
+  ]
+}
